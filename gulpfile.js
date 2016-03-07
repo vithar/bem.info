@@ -87,6 +87,10 @@ gulp.task('copy-misc-to-output', ['clean-output'], () => {
 
 // Сборка данных
 
+gulp.task('libs-build', function(done) {
+    require('bem-lib-site-data')(path.resolve('.cache/libs/bem-components-2.4.0'));
+});
+
 gulp.task('data-clean', () => Q.all(_.values(DATA_DIRS).map(removeFolder)));
 gulp.task('data-cache-clean', () => Q.all(_.values(CACHE_DIRS).map(removeFolder)));
 gulp.task('data-build', () => Q.all(LANGUAGES.map(lang => {
@@ -103,7 +107,7 @@ gulp.task('data-build', () => Q.all(LANGUAGES.map(lang => {
         }
     });
 })));
-gulp.task('data-rebuild', () => runSequence('data-clean', 'data-cache-clean', 'data-build'));
+gulp.task('data', () => runSequence('data-clean', 'data-cache-clean', 'data-build'));
 
 // Шаблонизация данных
 
@@ -187,13 +191,9 @@ gulp.task('browser-sync', () => {
     });
 });
 
-gulp.task('libs-build', function(done) {
-    // require('bem-lib-site-generator').data(path.resolve('path/to/library'));
-});
-
 gulp.task('default', (done) => runSequence(
     'copy-misc-to-output',
-    'data-build',
+    // 'data-build',
     'enb-make',
     'copy-static',
     'copy-static-images',

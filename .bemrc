@@ -1,0 +1,26 @@
+module.exports = {
+    modules: {
+        'lib-site-generator': {
+            tempFolder: '.cache/temp',
+            outputFolder: '.cache/libs-data',
+            langs: ['ru', 'en'],
+            platforms: {
+                'desktop': ['common', 'deskpad', 'desktop']
+                // ,
+                // 'touch-phone': ['common', 'touch', 'touch-phone'],
+                // 'touch-pad': ['common', 'deskpad', 'touch', 'touch-pad']
+            },
+            libs: {
+                'bem-components-2.4.0': {
+                    langs: ['ru', 'en'],
+                    github: {
+                        url: 'github.com',
+                        user: 'bem',
+                        repo: 'bem-components',
+                        defaultBranch: 'v2'
+                    }
+                }
+            }
+        }
+    }
+};

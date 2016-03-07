@@ -252,38 +252,14 @@
     "url": "/platform/libs/",
     "site": "/platform/libs/",
     "title": "Библиотеки",
-    "content": "<ul><li><a href=\"bem-core/2.7.0\">bem-core/2.7.0</a><li><a href=\"bem-core/2.8.0\">bem-core/2.8.0</a></ul>",
+    "content": "<ul><li><a href='bem-components/2.4.0'>bem-components-2.4.0</a></ul>",
     "bundle": "platform"
   },
   {
-    "url": "/platform/libs/bem-core/2.7.0/",
-    "site": "/platform/libs/bem-core/2.7.0/",
-    "title": "bem-core 2.7.0",
-    "content": "content-libs/bem-core-2.7.0",
-    "type": "lib",
-    "bundle": "platform"
-  },
-  {
-    "url": "/platform/libs/bem-core/2.7.0/i-bem/",
-    "site": "/platform/libs/bem-core/2.7.0/",
-    "title": "i-bem",
-    "content": "i-bem block",
-    "type": "lib",
-    "bundle": "platform"
-  },
-  {
-    "url": "/platform/libs/bem-core/2.8.0/",
-    "site": "/platform/libs/bem-core/2.8.0/",
-    "title": "bem-core 2.8.0",
-    "content": "content-libs/bem-core-2.8.0",
-    "type": "lib",
-    "bundle": "platform"
-  },
-  {
-    "url": "/platform/libs/bem-core/2.8.0/i-bem/",
-    "site": "/platform/libs/bem-core/2.8.0/",
-    "title": "i-bem",
-    "content": "i-bem block",
+    "url": "/platform/libs/bem-components/2.4.0/",
+    "site": "/platform/libs/bem-components/2.4.0/",
+    "title": "bem-components 2.4.0",
+    "source": "https://github.com/bem/bem-components.git",
     "type": "lib",
     "bundle": "platform"
   },

@@ -10,7 +10,7 @@
     "node": ">=4.1"
   },
   "devDependencies": {
-    "bem-lib-site-generator": "git://github.yandex-team.ru/tadatuta/bem-lib-site-generator.git#useBemConfig",
+    "bem-lib-site-data": "bem-site/bem-lib-site-data",
     "borschik": "^1.5.2",
     "borschik-tech-cleancss": "^1.0.3",
     "bower": "^1.3.12",
