@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd output
+cd output/bem.info/
 
 # init new repo
 git init
