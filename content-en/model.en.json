@@ -12,6 +12,7 @@
     "site": "/methodology/",
     "title": "Methodology",
     "source": "./content-en/methodology/index.en.bemjson.js",
+    "tags": ["methodology"],
     "type": "bemjson.js",
     "bundle": "methodology-index"
   },
@@ -20,6 +21,7 @@
     "site": "/methodology/",
     "title": "Key concepts",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/key-concepts/key-concepts.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -27,6 +29,7 @@
     "site": "/methodology/",
     "title": "Naming convention",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/naming-convention/naming-convention.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -34,6 +37,7 @@
     "site": "/methodology/",
     "title": "Filesystem",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/filesystem/filesystem.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -41,6 +45,7 @@
     "site": "/methodology/",
     "title": "Build",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/build/build.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -48,6 +53,7 @@
     "site": "/methodology/",
     "title": "Declarations",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/declarations/declarations.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -55,6 +61,7 @@
     "site": "/methodology/",
     "title": "Solved problems",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/solved-problems/solved-problems.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -62,6 +69,7 @@
     "site": "/methodology/",
     "title": "History",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/history/history.en.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {

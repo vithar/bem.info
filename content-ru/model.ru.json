@@ -13,6 +13,7 @@
     "site": "/methodology/",
     "title": "Методология",
     "source": "./content-ru/methodology/index.ru.bemjson.js",
+    "tags": ["methodology"],
     "type": "bemjson.js",
     "bundle": "methodology-index"
   },
@@ -21,6 +22,7 @@
     "site": "/methodology/",
     "title": "Основные понятия",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/key-concepts/key-concepts.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -28,6 +30,7 @@
     "site": "/methodology/",
     "title": "Соглашение по именованию",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/naming-convention/naming-convention.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -35,6 +38,7 @@
     "site": "/methodology/",
     "title": "Файловая система",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/filesystem/filesystem.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -42,6 +46,7 @@
     "site": "/methodology/",
     "title": "Сборка",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/build/build.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -49,6 +54,7 @@
     "site": "/methodology/",
     "title": "Декларации",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/declarations/declarations.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -56,6 +62,7 @@
     "site": "/methodology/",
     "title": "Какие проблемы решает",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/solved-problems/solved-problems.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {
@@ -63,6 +70,7 @@
     "site": "/methodology/",
     "title": "История создания",
     "source": "https://github.com/bem/bem-method/blob/bem-info-data/method/history/history.ru.md",
+    "tags": ["methodology"],
     "bundle": "methodology"
   },
   {

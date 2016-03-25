@@ -1,3 +1,8 @@
 block('article').content()(function() {
-    return this.data.page.content;
+    return [
+        {
+            block: 'article-meta',
+        },
+        this.data.page.content
+    ];
 });
