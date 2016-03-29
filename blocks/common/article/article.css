@@ -7,77 +7,64 @@
 }
 
 /* block level (begin) */
-.article h1,
-.article h2,
-.article h3,
-.article h4,
-.article p,
-.article ul,
-.article ol,
-.article hr,
-.article blockquote,
-.article pre
+.article__p,
+.article__ul,
+.article__ol,
+.article__blockquote,
+.article__blockcode,
+.article__hr
 {
     max-width: 760px;
-}
-
-.article p,
-.article ul,
-.article ol,
-.article blockquote,
-.article pre,
-.article hr
-{
     margin: 0 0 16px;
 }
 
-.article li
+.article__li
 {
     margin: 0;
 }
 
-.article ul ul,
-.article ul ol,
-.article ol ul,
-.article ol ol
+.article__ul .article__ul,
+.article__ul .article__ol,
+.article__ol .article__ul,
+.article__ol .article__ol
 {
     margin-top: 16px;
 }
 
-.article hr:before
+.article__hr:before
 {
     visibility: hidden;
 
     content: '-';
 }
 
-.article hr
+.article__hr
 {
     margin: -16px 0 16px;
     padding: 0;
 
     color: #ccc;
     border: 0;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC') repeat-x 0 75%;
+    background: url('article__hr.gif') repeat-x 0 75%;
 }
 /* block level (end) */
 
-
 /* heading (begin) */
-.article__heading
+.article__h1,
+.article__h2,
+.article__h3,
+.article__h4
 {
-    font-family: 'OpenSans-SemiBold', Arial, sans-serif;
-    font-weight: 300;
+    font: 300 1px/1 'OpenSans-SemiBold', Arial, sans-serif;
 
     position: relative;
     z-index: 1;
 
-    display: inline-block;
-
+    max-width: 760px;
     padding: 0;
 }
 
-.article__heading_1
+.article__h1
 {
     font-size: 49px;
     line-height: 64px;
@@ -92,7 +79,7 @@
         font-size: 14px;
     }
 */
-.article__heading_2
+.article__h2
 {
     font-size: 36px;
     line-height: 48px;
@@ -100,7 +87,7 @@
     margin: 50px 0 14px -1px;
 }
 
-.article__heading_3
+.article__h3
 {
     font-size: 28px;
     line-height: 48px;
@@ -108,7 +95,7 @@
     margin: 37px 0 11px 0;
 }
 
-.article__heading_4
+.article__h4
 {
     font-size: 20px;
     line-height: 32px;
@@ -116,22 +103,22 @@
     margin: 31px 0 17px 0;
 }
 
-.article__heading_1 + .article__heading_2
+.article__h1 + .article__h2
 {
     margin-top: -14px;
 }
 
-.article__heading_2 + .article__heading_3
+.article__h2 + .article__h3
 {
     margin-top: 19px;
 }
 
-.article__heading_3 + .article__heading_4
+.article__h3 + .article__h4
 {
     margin-top: -1px;
 }
 
-.article__heading-anchor::before
+.article__anchor::before
 {
     font-size: 80%;
 
@@ -147,32 +134,43 @@
     color: #ccc;
 }
 
-.article__heading:hover .article__heading-anchor::before
+.article__h1:hover .article__anchor::before,
+.article__h2:hover .article__anchor::before,
+.article__h3:hover .article__anchor::before,
+.article__h4:hover .article__anchor::before
 {
     display: inline-block;
 }
+
+.article__h1 .article__code,
+.article__h2 .article__code,
+.article__h3 .article__code,
+.article__h4 .article__code
+{
+    font: inherit;
+}
+
 /* heading (end) */
 
 /* blockquote and pre (begin) */
-.article blockquote,
-.article pre
+.article__blockquote,
+.article__blockcode
 {
     padding: 0 32px;
 
     border-left: 4px solid #e9e8e6;
     background: rgba(240, 240, 235, 0.4);
-    /* MUST BE #F6F5F3 */
 }
 
-.article code[class|=lang]
+.article__blockcode .article__code
 {
-    font: 16px/1 Consolas, monospace;
+    font: 16px/2 Consolas, monospace;
 
     display: block;
     overflow-x: auto;
 
     width: 100%;
-    padding: 9px 0 7px;
+    padding: 17px 0 15px;
 
     white-space: pre;
 
@@ -181,26 +179,13 @@
     background: none;
 }
 
-/* Double line-height for HTML/XML */
-.article code.lang-xml,
-.article code.lang-html
-{
-    line-height: 2;
-
-    padding: 17px 0 15px;
-}
-
-.article blockquote pre
-{
-    border: 0;
-    background: none;
-}
-
-.article blockquote code.lang-xml,
-.article blockquote code.lang-html
+.article__blockquote .article__blockcode
 {
     margin-bottom: -1px;
     padding: 1px 0 0;
+
+    border: 0;
+    background: none;
 }
 
 /* Copy/paste from //cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/solarized_light.min.css */
@@ -282,18 +267,18 @@
 /* blockquote and pre (end) */
 
 /* inline (begin) */
-.article strong
+.article__strong
 {
     font: 16px/1.9 'OpenSans-SemiBold', Arial, sans-serif;
 }
 
 /* Image height MUST be multiple 16px */
-.article img
+.article__img
 {
     margin: 7px 0 -1px;
 }
 
-.article code
+.article__code
 {
     font: 16px/1.9 Consolas, monospace;
 
@@ -305,23 +290,23 @@
 }
 
 /* links (begin) */
-.article a
+.article__a
 {
     transition: all 0.3s;
     text-decoration: none;
 }
 
-.article a:link
+.article__a:link
 {
     color: #04b;
 }
 
-.article a:visited
+.article__a:visited
 {
     color: #909;
 }
 
-.article a:hover
+.article__a:hover
 {
     color: #c00;
 }
@@ -337,22 +322,23 @@
         padding: 8px 10% 16px;
     }
 
-    .article__heading_1
+    .article__h1
     {
         font-size: 36px;
     }
 
-    .article__heading_2
+    .article__h2
     {
         font-size: 28px;
     }
 
-    .article__heading_3
+    .article__h3
     {
         font-size: 20px;
     }
-    .article blockquote,
-    .article pre
+
+    .article__blockquote,
+    .article__blockcode
     {
         padding: 0 5px;
     }

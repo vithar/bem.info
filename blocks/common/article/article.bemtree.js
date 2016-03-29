@@ -1,3 +1,3 @@
 block('article').content()(function() {
-    return this.data.page.content;
+    return JSON.parse(this.data.page.content);
 });
