@@ -1,30 +1,49 @@
 .articles
 {
     max-width: 760px;
-    margin: 0 0 0 160px;
-    /*margin: 62px 32px 126px 271px;*/
+    margin: -4px 0 0 162px;
 }
 
 .articles__title
 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 48px;
+
+    margin: 0 0 -1px -1px;
+}
+
+.articles__link:link
+{
+    color: #04b;
+}
+
+.articles__link:visited
+{
+    color: #909;
 }
 
 .articles__photo
 {
     position: absolute;
 
-    width: 140px;
-    height: 140px;
-    margin: 10px 0 10px -160px;
+    width: 144px;
+    height: 144px;
+    margin: 5px 0 10px -160px;
+}
 
-    /*border-radius: 70px;*/
+.articles__date
+{
+    font-size: 15px;
+    line-height: 15px;
+
+    color: #777;
 }
 
 .articles__author
 {
+    font-weight: 600;
+
     display: inline;
 
     margin: 0;
@@ -49,6 +68,6 @@
 
 .articles__text
 {
-    min-height: 10ex;
-    margin: 1ex 0 2ex;
+    min-height: 64px;
+    margin: 16px 0 49px;
 }

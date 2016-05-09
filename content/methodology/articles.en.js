@@ -1,12 +1,43 @@
-module.exports = [
+[
+    {
+        title: 'Learning to Love BEM',
+        author: 'Johan Ronsse',
+        photo: 'people/johan-ronsse.jpg',
+        position: 'Interface designer',
+        url: 'http://mono.company/journal/frontend/learning-to-love-bem/',
+        date: '06-05-2015',
+        text: 'I have to admit: when I first heard about BEM, I thought it was a bad idea. Why make your CSS naming so complicated? After learning more about BEM I am convinced: the method really has its merits. It is mostly useful in the context of a large scale web application with a lot of components.'
+    },
+
+    {
+        title: 'Side Effects in CSS',
+        author: 'Philip Walton',
+        photo: 'https://pbs.twimg.com/profile_images/556908160405876738/1FTm29BI_400x400.jpeg',
+        position: 'Engineer at Google on the developer relations team',
+        url: 'http://philipwalton.com/articles/side-effects-in-css/',
+        date: '03-03-2015',
+        text: 'There are two types of problems in CSS: cosmetic problems and architectural problems. Cosmetic problems annoying, sure, but they don’t break the build. Architectural problems, on the other hand, can cripple development. I can remember distinct cases where we postponed developing a new feature because we were too afraid to make any changes to the CSS.'
+    },
+
+    // https://www.smashingmagazine.com/2014/07/bem-methodology-for-small-projects/
+
+    // ???
+    // https://github.com/bem/bem-method/blob/bem-info-data/articles/yandex-frontend-dev/yandex-frontend-dev.en.md
+
+    // ???
+    // https://www.smashingmagazine.com/2015/02/product-design-unification-case-study-mobile-web-framework/
+
     {
         title: 'MindBEMding – getting your head ’round BEM syntax',
         author: 'Harry Roberts',
-        photo: 'promo-quotes__harry-roberts.jpg',
+        photo: 'people/harry-roberts.jpg',
         position: 'Consultant Front-end Architect',
         url: 'http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/',
-        text: 'I use BEM notation on everything I build now as its usefulness has proved itself over and over.'
-    },
+        date: '25-01-2013',
+        text: 'So that’s BEM (or a slight variation thereof); a highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.'
+    }
+/*
+    ,
     {
         title: 'Maintainable CSS with BEM',
         author: 'Mark McDonnell',
@@ -55,4 +86,5 @@ module.exports = [
         url: 'https://twitter.com/necolas/status/192678667023949824',
         text: 'BEM is far more than a HTML/CSS system. Iʼve got no plans to use it all; just adapted some of its ideas.'
     }
+*/
 ];

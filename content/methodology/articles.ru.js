@@ -1,12 +1,20 @@
-module.exports = [
+[
     {
-        title: 'MindBEMding – getting your head ’round BEM syntax',
-        author: 'Harry Roberts',
-        photo: 'promo-quotes__harry-roberts.jpg',
-        position: 'Consultant Front-end Architect',
-        url: 'http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/',
-        text: 'I use BEM notation on everything I build now as its usefulness has proved itself over and over.'
+        title: 'Учимся любить БЭМ',
+        author: 'Johan Ronsse',
+        photo: 'people/johan-ronsse.jpg',
+        url: 'http://frontender.info/learning-to-love-bem/',
+        date: '27-05-2015',
+        text: 'Должен признаться: когда я впервые услышал о БЭМ, я подумал, что идея как-то не очень. Зачем так усложнять именование в CSS? Со временем я узнал БЭМ получше и убедился, что у него есть свои достоинства: в основном он полезен для больших приложений с огромным количеством компонентов.'
     },
+
+    // ???
+    // https://blog.decaf.de/2015/06/24/why-bem-in-a-nutshell/
+
+    // https://habrahabr.ru/company/yandex/blog/234905/
+
+
+/*
     {
         title: 'Maintainable CSS with BEM',
         author: 'Mark McDonnell',
@@ -55,4 +63,5 @@ module.exports = [
         url: 'https://twitter.com/necolas/status/192678667023949824',
         text: 'BEM is far more than a HTML/CSS system. Iʼve got no plans to use it all; just adapted some of its ideas.'
     }
+*/
 ];

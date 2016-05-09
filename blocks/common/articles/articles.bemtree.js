@@ -8,25 +8,32 @@ block('articles').content()(function() {
         return [
             {
                 elem: 'title',
-                content: {
-                    elem: 'link',
-                    attrs: { href: article.url },
-                    content: [
-                        {
-                            elem: 'photo',
-                            src: article.photo,
-                            alt: article.author
-                        },
-                        ' ',
-                        article.title
-                    ]
-                }
+                content: [
+                    {
+                        elem: 'link',
+                        attrs: { href: article.url },
+                        content: [
+                            {
+                                elem: 'photo',
+                                src: article.photo,
+                                alt: article.author
+                            },
+                            ' ',
+                            article.title
+                        ]
+                    },
+                    ' ',
+                    {
+                        elem: 'date',
+                        content: article.date
+                    }
+                ]
             },
             {
                 elem: 'author',
                 content: article.author
             },
-            {
+            article.position && {
                 elem: 'position',
                 content: article.position
             },

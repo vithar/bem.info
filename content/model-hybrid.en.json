@@ -74,6 +74,15 @@
     "bundle": "methodology"
   },
   {
+    "url": "/methodology/articles/",
+    "site": "/methodology/",
+    "title": "Articles",
+    "source": "./content/methodology/articles.en.js",
+    "tags": ["methodology"],
+    "type": "articles",
+    "bundle": "methodology"
+  },
+  {
     "url": "/methodology/faq/",
     "site": "/methodology/",
     "title": "FAQ",
