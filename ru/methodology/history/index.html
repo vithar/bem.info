@@ -1,0 +1,654 @@
+<!DOCTYPE html><html class="ua_js_no"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>История создания / Методология / БЭМ</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");</script><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic"/><link rel="stylesheet" href="/bem.info/ru/methodology.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/><meta property="og:image" content="https://ru.bem.info/og_image/logo_theme_stripe.png"/><meta property="og:url" content="/methodology/history/"/><meta property="og:type" content="article"/><meta property="og:description" content="История создания"/><meta property="og:keywords" content="methodology"/><link rel="shortcut icon" href="/bem.info/ru/favicon.ico"/></head><body class="page"><div class="header i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="/bem.info/ru/"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><ul class="lang-switcher header__lang"><li class="lang-switcher__item"><a class="lang-switcher__link" href="/bem.info/en/methodology/history/">en</a></li><li class="lang-switcher__item"><span class="lang-switcher__current">ru</span></li></ul><a class="header__forum" href="/bem.info/ru/forum/">Форум</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><form class="form search__form search__form_site_methodology i-bem" data-bem='{"form":{}}' action="https://yandex.ru/sitesearch"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="text" placeholder="Искать" autocomplete="off" type="search"/></span></span><input type="hidden" name="reqenc"/><input type="hidden" name="searchid" value="1944806"/><input type="hidden" name="l10n" value="ru"/><div class="search-icon search__submit"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></form></div><div class="header__menu"><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/ru/methodology/">Методология</a></li></ul><ul class="nav"><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/key-concepts/">Основные понятия</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/naming-convention/">Соглашение по именованию</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/js/">JavaScript</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/js-principles/">Особенности JavaScript</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/filesystem/">Файловая система</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/build/">Сборка</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/declarations/">Декларации</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/solved-problems/">Какие проблемы решает</a></li><li class="nav__item nav__item_current">История создания</li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/articles/">Статьи</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/methodology/faq/">FAQ</a></li></ul></div><div class="header__toggle search-icon"><span class="header__toggle-line"></span></div></div><div class="sitemap i-bem" data-bem='{"sitemap":{}}'><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="/bem.info/ru/methodology/">Методология</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/key-concepts/">Основные понятия</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/naming-convention/">Соглашение по именованию</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/js-principles/">Особенности JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/filesystem/">Файловая система</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/build/">Сборка</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/declarations/">Декларации</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/solved-problems/">Какие проблемы решает</a></li><li class="sitemap__tree-item-1"><strong class="sitemap__current">История создания</strong></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/articles/">Статьи</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_toolbox"><a class="sitemap__link" href="/bem.info/ru/toolbox/">Toolbox</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/">ENB</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/">enb-bem-techs</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-bundle/">Сборка бандла</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-page/">Сборка страницы</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-merged-bundle/">Сборка merged-бандла</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-dist/">Сборка дистрибутива</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/changelog/">Изменения</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/migration-2/">Миграция на 2.0</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/migration-1/">Миграция на 1.0</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-js/">enb-js</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-js/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-js/changelog/">Изменения</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-modules/">enb-modules</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-modules/changelog/">Изменения</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/">enb-css</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/ie/">Сборка бандла для IE</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/changelog/">Изменения</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-stylus/">enb-stylus</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-stylus/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-stylus/changelog/">Изменения</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/toolbox/bem-tools/">bem-tools</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/">BEM SDK</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/bem-naming/">bem-naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/bem-config/">bem-config</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/bem-fs-scheme/">bem-fs-scheme</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_platform"><a class="sitemap__link">Платформа</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link">Технологии</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/i-bem/v2/i-bem-js/">i-bem</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/technology/deps/about/">DEPS</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/bemjson/v2/bemjson/">BEMJSON</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/bemhtml/v2/intro/">BEMHTML</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/bemtree/v2/bemtree/">BEMTREE</a></li><div class="sitemap__tree-item-0"><a class="sitemap__link" href="/bem.info/ru/libs/">Библиотеки</a></div><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/libs/bem-core/">bem-core</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/libs/bem-components/">bem-components</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/libs/bem-history/">bem-history</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_community"><a class="sitemap__link" href="/bem.info/ru/community/">Сообщество</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/blog/">Блог</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/events/">События</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/forum/">Форум</a></li></ul></div></div><div class="article-wrap"><div class="article"><ul class="article-tags"><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/ru/tags/methodology">methodology</a></li></ul><h1 class="article__heading article__heading_1" id="История-создания-БЭМ"><a href="#История-создания-БЭМ" class="article__heading-anchor"></a>История создания БЭМ</h1><ul>
+<li><a href="#Типичная-верстка-в-Яндексе-2005-года">Типичная верстка в Яндексе (2005)</a></li>
+<li><a href="#Зарождение-основ-методологии">Зарождение основ методологии (2006)</a></li>
+<li><a href="#Зачатки-общепортального-фреймворка">Зачатки общепортального фреймворка (2006)</a></li>
+<li><a href="#Верстка-независимыми-блоками">Верстка независимыми блоками (2007)</a></li>
+<li><a href="#Общепортальный-фреймворк--Лего">Общепортальный фреймворк — Лего (2008)</a></li>
+<li><a href="#Общепортальный-фреймворк--Лего-12-2008">Общепортальный фреймворк — Лего 1.2 (2008)</a></li>
+<li><a href="#Лего-20-Появление-БЭМ">Лего 2.0. Появление БЭМ (2009)</a></li>
+<li><a href="#БЭМ-и-open-source-2010">БЭМ и open source (2010)</a></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Типичная-верстка-в-Яндексе-2005-года"><a href="#Типичная-верстка-в-Яндексе-2005-года" class="article__heading-anchor"></a>Типичная верстка в Яндексе 2005 года</h2><p>История БЭМ началась в 2005 году. Тогда, с точки зрения интерфейса, обычный проект Яндекса был набором статических HTML-страниц, которые использовались как основа для создания шаблонов на XSL.</p>
+<p>HTML-страницы хранились в отдельной директории, которая имела подобную структуру:</p>
+<pre><code class="lang-files">about.html
+index.html
+…
+project.css
+project.js
+i/
+  yandex.png
+</code></pre>
+<ul>
+<li>Для каждой страницы создавался отдельный HTML-файл. В верстке использовались <code>id</code> и <code>классы</code>.</li>
+<li>Скрипты хранились в одном файле для всего проекта — <code>project.js</code>. JavaScript использовался как вспомогательный инструмент для оживления страницы, поэтому <code>project.js</code> был небольшим.</li>
+<li>Картинки складывались в отдельную директорию. Необходимость поддержки IE 5 и отсутствие CSS3 в браузерах, вынуждало использовать картинки для реализации любого оформления, даже для закругленных уголков.</li>
+<li><p>Стили, как и скрипты, находились в одном файле — <code>project.css</code>. Для отделения стилей разных частей страницы использовались комментарии с указанием начала и конца:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Content container (begin) */</span>
+    <span class="hljs-selector-id">#body</span>
+    {
+        <span class="hljs-attribute">font</span>: <span class="hljs-number">0.8em</span> Arial, sans-serif;
+
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0.5em</span> <span class="hljs-number">1.95%</span> <span class="hljs-number">0.5em</span> <span class="hljs-number">2%</span>;
+    }
+<span class="hljs-comment">/* Content container (end) */</span>
+
+<span class="hljs-comment">/* Graphical banner (begin) */</span>
+    <span class="hljs-selector-class">.banner</span>
+    {
+        <span class="hljs-attribute">text-align</span>: center;
+    }
+
+    <span class="hljs-selector-class">.banner</span> <span class="hljs-selector-tag">a</span>
+    {
+        <span class="hljs-attribute">text-decoration</span>: none;
+    }
+<span class="hljs-comment">/* Graphical banner (end) */</span>
+</code></pre>
+</li>
+</ul>
+<p>Сверстанные статические HTML-страницы нарезались в XSL-шаблоны. Если HTML изменялся, все правки было необходимо переносить вручную в XSL. И наоборот, изменения в шаблонах требовали правок в HTML (для поддержания статического HTML в актуальном состоянии).</p>
+<h2 class="article__heading article__heading_2" id="Зарождение-основ-методологии"><a href="#Зарождение-основ-методологии" class="article__heading-anchor"></a>Зарождение основ методологии</h2><p>В 2006 году началась работа над первыми большими проектами - Яндекс.Музыка и Я.ру. Эти проекты с десятками страниц выявили основные недостатки текущего подхода к разработке:</p>
+<ul>
+<li>сложно подбирать названия классам;</li>
+<li>невозможно внести изменения в код одной страницы, не затрагивая код другой.</li>
+</ul>
+<p>Типичный CSS того времени, содержащий длинный каскад:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Albums (begin) */</span>
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.info</span>
+    {
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">8.5em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.title</span>
+    {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0.3em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.album</span> <span class="hljs-selector-class">.listen</span>
+    {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.3em</span> <span class="hljs-number">1em</span> <span class="hljs-number">0</span> <span class="hljs-number">1em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.album</span> <span class="hljs-selector-class">.buy</span>
+    {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.4em</span> <span class="hljs-number">1em</span> <span class="hljs-number">0</span> <span class="hljs-number">1.6em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">i</span>
+    {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">85%</span>;
+    }
+<span class="hljs-comment">/* Albums (end) */</span>
+</code></pre>
+<p>Одновременное использование <code>id</code> и <code>тегов</code>:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Картинки на фоне (begin) */</span>
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">71px</span>;
+        <span class="hljs-attribute">background</span>: transparent <span class="hljs-built_in">url</span>(../i/foot-1.png) <span class="hljs-number">4%</span> <span class="hljs-number">50%</span> no-repeat;
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">21%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-2.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">38%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-3.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">54%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-4.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">71%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-5.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">87%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-6.png);
+    }
+<span class="hljs-comment">/* Картинки на фоне (end) */</span>
+</code></pre>
+<p>Верстка большоего проекта была неуправляемой. Чтобы избежать этого, нужно было определить правила работы с понятиями <code>класса</code>, <code>тега</code>, <code>визуального компонента</code> и не только.</p>
+<h3 class="article__heading article__heading_3" id="Появление-блоков"><a href="#Появление-блоков" class="article__heading-anchor"></a>Появление блоков</h3><p>Основное время разработчиков тратилось на создание HTML-структуры страницы и написание CSS-стилей для нее. JavaScript воспринимался лишь как сопутствующая технология.</p>
+<p>Чтобы ускорить разработку, требовалось облегчить поддержку HTML и CSS отдельных компонентов страницы. Для этого мы ввели новое понятие – <code>блок</code>.</p>
+<p><code>Блоком</code> называлась часть дизайна страницы или раскладки со своим специфическим и уникальным значением, определенным семантически или визуально.</p>
+<p>В большинстве случаев любой компонент на странице (сложный или простой) рассматривался как блок. HTML-контейнер каждого блока получал уникальный CSS-класс с тем же именем, что и у блока.</p>
+<p>Классам блоков мы добавили префиксы (<code>b-</code>, <code>c-</code>, <code>g-</code>), чтобы отличать их от внутренних классов:</p>
+<ul>
+<li><p><strong>b-</strong> block</p>
+<p>Независимый блок, может использоваться в любом месте страницы.</p>
+</li>
+<li><p><strong>с-</strong> control</p>
+<p>Контрол (независимый блок), с которым ассоциирован JavaScript-объект, обеспечивающий его функциональность. Может использоваться в любом месте страницы.</p>
+</li>
+<li><p><strong>g-</strong> global</p>
+<p>Глобальное определение, используется по необходимости. Количество сведено к минимуму.</p>
+</li>
+</ul>
+<p>Кроме префиксов использовались постфиксы:</p>
+<ul>
+<li><p><strong>-nojs</strong> no javascript</p>
+<p>Стиль применяется в отсутствие JavaScript. Если JavaScript включен, то при загрузке страницы вызывается метод <code>init()</code> в onload, и постфикс удаляется из всех классов. Так «включался» JavaScript для блоков.</p>
+</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Появление-элементов"><a href="#Появление-элементов" class="article__heading-anchor"></a>Появление элементов</h3><p>В HTML-контейнере, формирующем блок, некоторые узлы получали четкое имя CSS-класса. Это не только облегчило создание стилистических правил, независящих от имени тега, но и позволяло присваивать семантически значимую роль каждому узлу. Такие внутренние узлы мы назвали <code>элементами блока</code>, или просто <code>элементами</code>.</p>
+<p>Ключевое различие между блоком и элементом в тот момент:</p>
+<ul>
+<li>элемент не может существовать вне контекста родительского блока;</li>
+<li>из блока нельзя извлечь ни один элемент.</li>
+</ul>
+<p>Если элемент способен существовать вне блока, он становится блоком.</p>
+<p>Позже стало возможным вынимать некоторые элементы из блока, сохраняя при этом рабочее состояние самого блока.</p>
+<p>Элементы с большим количеством кода выделялись комментариями.</p>
+<pre><code class="lang-css">/* Head (begin) */
+    .b-head { … }
+
+    /* Logo (begin) */
+        .b-head .logo { … }
+        .b-head .logo a { … }
+    /* Logo (end) */
+
+    /* Right side (begin) */
+    .b-head .right { … }
+
+        /* Info (begin) */
+            .b-head .info { … }
+            .b-head .info .exit a { … }
+        /* Info (end) */
+
+        /* Search (begin) */
+            .b-head .search { … }
+            .b-head .search div div, .b-head .search div div i { … }
+        /* Search (end) */
+    /* Right side (end) */
+/* Head (end) */
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Унификация-файловой-структуры-проекта"><a href="#Унификация-файловой-структуры-проекта" class="article__heading-anchor"></a>Унификация файловой структуры проекта</h3><p>Разработчики интерфейсов обычно поддерживают несколько проектов одновременно. Работать с разными проектами легче, если все они имеют
+одинаковую (или очень похожую) файловую структуру. Поэтому мы унифицировали структуры репозиториев разных проектов.</p>
+<p>Начали с того, что CSS, JavaScript и картинки стали складывать в отдельные директории.</p>
+<p>JavaScript применялся все чаще, в проект подключались дополнительные компоненты и библиотеки.</p>
+<p>Типичная структура верстки проекта 2006 года:</p>
+<pre><code class="lang-files">index.html
+css/
+  yaru.css
+  yaru-ie.css
+js/
+  yaru.js
+i/
+  yandex.png
+</code></pre>
+<p>Основной код для IE мы писали в общем CSS-файле, например, <code>yaru.css</code>.</p>
+<pre><code class="lang-css">    <span class="hljs-comment">/* Common definitions (begin) */</span>
+        <span class="hljs-selector-tag">body</span>
+        {
+            <span class="hljs-attribute">font</span>: <span class="hljs-number">0.8em</span> Arial, sans-serif;
+
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2em</span> <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+        }
+
+        * <span class="hljs-selector-tag">html</span> <span class="hljs-selector-tag">body</span>
+        {
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80%</span>;
+        }
+</code></pre>
+<p>Специфичные правила (временные решения), работающие только в IE, создавались в отдельном файле. В имя файла доблялся специальный указатель <code>ie</code> — <code>yaru-ie.css</code>.</p>
+<pre><code class="lang-css">    <span class="hljs-comment">/* Common blocks (begin) */</span>
+        <span class="hljs-comment">/* Artist (begin) */</span>
+            <span class="hljs-selector-class">.b-artist</span> <span class="hljs-selector-class">.i</span> <span class="hljs-selector-tag">i</span>
+            {
+                <span class="hljs-attribute">top</span>: <span class="hljs-built_in">expression</span>(7 + (90 - this.parentNode.getElementsByTagName(<span class="hljs-string">'img'</span>)[<span class="hljs-number">0</span>].height)/<span class="hljs-number">2</span>);
+                <span class="hljs-attribute">filter</span>:progid:DXImageTransform.Microsoft.<span class="hljs-built_in">AlphaImageLoader</span>(src=<span class="hljs-string">'../i/sticker-lt.png'</span>, sizingMethod=<span class="hljs-string">'crop'</span>);
+            }
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Зачатки-общепортального-фреймворка"><a href="#Зачатки-общепортального-фреймворка" class="article__heading-anchor"></a>Зачатки общепортального фреймворка</h2><p>При верстке нескольких проектов с похожим дизайном появлялись общие блоки.</p>
+<p>Портал Яндекса в то время содержал больше 100 разных сервисов, выполненных в одном стиле. Для такого объема данных «copy/paste» из проекта
+в проект уже не подходил.</p>
+<p>Появилось общее хранилище повторно используемых компонентов, которое называлось <code>общая библиотека блоков</code> или просто — <code>Common</code>.</p>
+<p>Первые блоки, которые вошли в <code>Common</code>: шапка, подвал и стили для статического текста.</p>
+<blockquote>
+<p>Файлы блоков хранились на выделенном внутреннем сервере разработчиков (<strong>common.cloudkill.yandex.ru</strong> в примере ниже).</p>
+</blockquote>
+<p>Это было началом работы нашего общепортального фреймворка. Cтили из него подключались в основной проектный файл при помощи импортов непосредственно с сервера:</p>
+<pre><code class="lang-css">@import url(http://common.cloudkill.yandex.ru/css/global.css);
+@import url(http://common.cloudkill.yandex.ru/css/head/common.css);
+@import url(http://common.cloudkill.yandex.ru/css/static-text.css);
+@import url(http://common.cloudkill.yandex.ru/css/list/hlist.css);
+@import url(http://common.cloudkill.yandex.ru/css/list/hlist-middot.css);
+@import url(slider.css);
+
+/* Header (begin) */
+    /* Service (begin) */
+        .b-head .service h1 { … }
+        .b-head .service h1, .b-head .service h1 a, .b-head .service h1 b { … }
+</code></pre>
+<p>Возникла проблема: большое количество импортов замедляло загрузку страницы. Было принято решение прекомпилировать стили (и позже JavaScript-файлы)
+перед выкладкой.</p>
+<p>Компиляция заменяет <code>@import</code> на содержимое внешних файлов (это называется <code>inlining</code>) и оптимизирует код:
+например, убирает ненужные браузеру пробелы и комментарии.</p>
+<p>Наш внутренний инструмент для оптимизации вырос из простого Perl-скрипта в отдельный open-source-проект <a href="https://ru.bem.info/tools/optimizers/borschik/">borschik</a>.</p>
+<h2 class="article__heading article__heading_2" id="Верстка-независимыми-блоками"><a href="#Верстка-независимыми-блоками" class="article__heading-anchor"></a>Верстка независимыми блоками</h2><p>К осени 2007 года правила верстки устоялись. Мы увидели практическую пользу от нового подхода, поэтому было решено рассказать об этом вне Яндекса.</p>
+<p>На ClientSide&#39;07 был сделан доклад про
+<a href="http://vitaly.harisov.name/article/independent-blocks.html">верстку независимыми блоками</a>,
+которая на тот момент составляла основу наших HTML-страниц.</p>
+<p>В докладе официально вводилось понятие <code>блок</code>:</p>
+<p>&lt;blockquote&gt;Блоком будем называть фрагмент страницы, который описывается своей разметкой и стилями.&lt;/blockquote&gt;
+
+</p>
+<blockquote>
+<p>Более позднее <a href="https://ru.bem.info/forum/-45/">описание</a>.</p>
+</blockquote>
+<p>Блоки делились на простые и составные.</p>
+<p>&lt;blockquote&gt;В простые блоки нельзя вкладывать другие блоки, в составные — можно.&lt;/blockquote&gt;
+
+</p>
+<p>Это было очень наивное деление: мы неоднократно сталкивались с тем, что даже в самые простые блоки
+вкладывались другие, и приходилось переделывать верстку. В итоге мы пришли к противоположному принципу:</p>
+<p>&lt;blockquote&gt;Любой блок должен позволять вкладывать в него другой блок, когда это возможно.&lt;/blockquote&gt;
+
+</p>
+<h3 class="article__heading article__heading_3" id="Правила-независимости-блоков"><a href="#Правила-независимости-блоков" class="article__heading-anchor"></a>Правила независимости блоков</h3><p>Сформировались первые правила независимости блока:</p>
+<ol>
+<li>Для описания элемента используется <code>class</code>, но не <code>id</code>.</li>
+<li>Каждый блок имеет префикс.</li>
+<li>В таблице стилей нет классов вне блоков.</li>
+</ol>
+<p>Важным решением был отказ от <code>id</code>. Теперь мы могли:</p>
+<ul>
+<li>отображать на странице один и тот же блок несколько раз;</li>
+<li>использовать на одном DOM-узле несколько классов (что нам пригодилось в дальнейшем).</li>
+</ul>
+<h4 class="article__heading article__heading_4" id="Правила-полной-независимости-блоков"><a href="#Правила-полной-независимости-блоков" class="article__heading-anchor"></a>Правила полной независимости блоков</h4><p>С текущей схемой оставался ряд проблем с CSS:</p>
+<ul>
+<li>CSS мог работать неправильно, если на одной странице смешиваются стили из разных источников.</li>
+<li>В сложных случаях блоки могли вредить отображению друг друга из-за конфликта имен элементов.</li>
+<li>Стили, опирающиеся на имена тегов, могли охватывать больше элементов, чем было задумано.</li>
+</ul>
+<p>Поэтому мы сформулировали правила более строгой независимости блоков под названием <a href="https://ru.bem.info/forum/-46/">абсолютно независимые блоки</a> (АНБ):</p>
+<ol>
+<li><p>Никогда не опираться на элементы - только на классы.</p>
+<p><code>.b-user b -&gt; .b-user .first-letter</code></p>
+</li>
+<li><p>Всем классам внутри блока давать имена, начинающиеся с имени этого блока.</p>
+<p><code>.b-user .first-letter -&gt; .b-user-first_letter</code></p>
+</li>
+</ol>
+<p>Мы понимали, что наличие класса у каждого DOM-узла существенно увеличивает объем HTML-кода. На тот момент мы считали, что это дорого, и применяли такой подход в исключительных случаях.</p>
+<h3 class="article__heading article__heading_3" id="Первые-правила-именования--префиксы"><a href="#Первые-правила-именования--префиксы" class="article__heading-anchor"></a>Первые правила именования — префиксы</h3><p>Так как распространенной проблемой в программировании является подбор имен переменным. Мы решили задавать имена блоков с помощью разных префиксов с разной семантикой:</p>
+<ul>
+<li><strong>b-</strong> — обычные блоки;</li>
+<li><strong>h-</strong> — обертки для нескольких блоков;</li>
+<li><strong>l-</strong> — раскладки;</li>
+<li><strong>g-</strong> — глобальные стили.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Появление-модификации-блоков"><a href="#Появление-модификации-блоков" class="article__heading-anchor"></a>Появление модификации блоков</h3><p>Работая с блоками, мы поняли, что они могут иметь разные состояния. Например, блок <code>Кнопка</code> может быть представлен в трех состояниях: маленькая, нормальная и большая.</p>
+<p>Вместо того, чтобы создавать три разных блока, мы начали делать <code>модификации</code> одного.</p>
+<p><code>Модификацию</code> мы определили как особое состояние блока или как метку, несущую определенное свойство блоку. Модификация состояла из имени (например, <code>size</code>) и значения (например, <code>small</code>, <code>normal</code> или <code>big</code>).</p>
+<p>Возможные варианты модификации:</p>
+<ol>
+<li>Блок может изменить свой внешний вид в зависимости от того, где он находится.
+Это модификация от контекста.</li>
+<li>Можно добавить блоку второй класс. Это модификация постфиксом, она не зависит от контекста.
+<code>class=&quot;b-block b-block-postfix&quot;</code></li>
+</ol>
+<h2 class="article__heading article__heading_2" id="Общепортальный-фреймворк--Лего"><a href="#Общепортальный-фреймворк--Лего" class="article__heading-anchor"></a>Общепортальный фреймворк — Лего</h2><p>Весной 2008 года была поставлена задача создать брендбук, описывающий наш портальный стиль. Решили начать работу с написания HTML/CSS кода.</p>
+<p>Проект получил название <code>Лего</code>.</p>
+<h3 class="article__heading article__heading_3" id="Структура-репозитория"><a href="#Структура-репозитория" class="article__heading-anchor"></a>Структура репозитория</h3><p>На верхнем уровне репозиторий разделен по технологиям:</p>
+<pre><code class="lang-files">css/
+html/
+js/
+xml/
+xsl/
+</code></pre>
+<p>Директория каждой технологии имеет свою структуру.</p>
+<p>CSS распределяется на следующие директории:</p>
+<ol>
+<li><code>block</code> — общепортальные блоки;</li>
+<li><code>util</code> — блоки, которые имеют смысл вне Яндекса, их можно выложить в open source;</li>
+<li><code>service</code> — стили для конкретных сервисов Яндекса. Подключив их к сервису, можно отобразить шапку или подвал.</li>
+</ol>
+<pre><code class="lang-files">css/
+  block/
+    b-dropdown/
+      b-dropdown.css
+  service/
+    auto/
+      block/
+        b-head-logo-auto.css
+      head.css
+  util/
+    b-hmenu/
+      b-hmenu.css
+</code></pre>
+<p>Структура директории HTML аналогична CSS:</p>
+<pre><code class="lang-files">html/
+  block/
+    b-dropdown.html
+  service/
+    auto/
+      l-head.html
+  util/
+    b-hmenu.html
+</code></pre>
+<p>JS находится в зачаточном состоянии и складывается в одну директорию:</p>
+<pre><code class="lang-files">js/
+  check-is-frame.js
+  check-session.js
+  clean-on-focus.js
+  dropdown.js
+  event.add.js
+  event.del.js
+</code></pre>
+<p>У каждого сервиса есть XML-файл, использующийся для построения шапки:</p>
+<pre><code class="lang-files">xml/
+  block/
+    b-head-tabs-communication.xml
+    common-services.ru.xml
+    head-messages.ru.xml
+  service/
+    auto/
+      head.xml
+</code></pre>
+<p>XSL блоков находится в одной директории. Каждому блоку соответствует один файл:</p>
+<pre><code class="lang-files">xsl/
+  block/
+    b-dropdown.xsl
+    b-head-line.xsl
+    i-common.xsl
+    i-locale.xsl
+    l-foot.xsl
+    l-head.xsl
+</code></pre>
+<p><code>Лего</code> подключается в проекты с помощью <em>svn:externals</em>.</p>
+<p>При финальной сборке проекта код библиотеки полностью включается в проект,
+что можно сравнить со статической линковкой.</p>
+<p>Такой подход позволяет выпускать версии сервисов с разными версиями <code>Лего</code>
+и переходить на новую версию тогда, когда это удобно команде проекта.</p>
+<h4 class="article__heading article__heading_4" id="Файлы-страниц"><a href="#Файлы-страниц" class="article__heading-anchor"></a>Файлы страниц</h4><p>Файлы, подключавшиеся на страницах, состояли из <code>@import</code>&#39;ов реализации блоков.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> url(../../block/l-head/l-head.css);
+@<span class="hljs-keyword">import</span> url(../../block/b-head-logo/b-head-logo.css);
+@<span class="hljs-keyword">import</span> url(../../block/b-head-logo/b-head-logo_name.css);
+@<span class="hljs-keyword">import</span> url(block/b-head-logo-auto.css);
+</code></pre>
+<p>Эти <code>@import</code>&#39;ы писались вручную.</p>
+<h3 class="article__heading article__heading_3" id="Правила-именования"><a href="#Правила-именования" class="article__heading-anchor"></a>Правила именования</h3><p>Именование файлов еще не устоялось - мы пробуем разные варианты.</p>
+<h2 class="article__heading article__heading_2" id="Общепортальный-фреймворк--Лего-12-2008"><a href="#Общепортальный-фреймворк--Лего-12-2008" class="article__heading-anchor"></a>Общепортальный фреймворк — Лего 1.2 (2008)</h2><h3 class="article__heading article__heading_3" id="Структура-репозитория-1"><a href="#Структура-репозитория-1" class="article__heading-anchor"></a>Структура репозитория</h3><p>В рамках версии Лего <code>1.2</code>, был произведен рефакторинг, и структура репозитория проекта изменилась.</p>
+<pre><code class="lang-files">common/
+  css/
+  js/
+  xml/
+  xsl/
+example/
+  html/
+service/
+  auto/
+    css/
+    xml/
+</code></pre>
+<p>Убрано разделение на <code>util</code> и <code>block</code>, общий CSS находится в <code>common/css</code>.</p>
+<p>От идеи выноса кода в open source на тот момент отказались и вернулись к ней только через два года.</p>
+<pre><code class="lang-files">common/
+  css/
+    b-dropdown/
+      arr/
+        b-dropdown.arr.css
+        b-dropdown.arr.ie.css
+        b-dropdown.css
+        b-dropdown.ie.css
+</code></pre>
+<p>Всё, что находилось в опциональном CSS (файлах <code>b-dropdown_arr.css</code>),
+вынесено в директории (<code>arr/b-dropdown.arr.css</code>).
+В основном файле блока стало меньше кода.</p>
+<h3 class="article__heading article__heading_3" id="Правила-именования-1"><a href="#Правила-именования-1" class="article__heading-anchor"></a>Правила именования</h3><p>Файлы для IE переименованы: указатель специфичности файла для IE был частью имени файла, а стал суффиксом. Было <code>-ie.css</code>, - стало <code>.ie.css</code>.
+Расширения файлов теперь могут состоять из нескольких слов.</p>
+<p>Для модификации постфиксом вместо дефиса начали использовать подчеркивание. Это позволило визуально отделить имя блока от имени модификатора, что
+позже пригодилось при реализации инструментов, упрощающих работу с кодом.</p>
+<h2 class="article__heading article__heading_2" id="Лего-20-Появление-БЭМ"><a href="#Лего-20-Появление-БЭМ" class="article__heading-anchor"></a>Лего 2.0. Появление БЭМ</h2><p>В марте 2009 года вышла версия <code>Лего 2.0</code>.</p>
+<p>Этим событием оканчивается <code>верстка независимыми блоками</code> и начинается <code>БЭМ</code>.</p>
+<p><strong>БЭМ</strong> — аббревиатура от Блок-Элемент-Модификатор. Это три ключевых сущности, которые мы используем при разработке веб-компонентов.</p>
+<p>Что же принципиально изменилось с выходом версии 2.0?</p>
+<p>Основное изменение — мы вывели вперед блоки, а не технологии.
+Отныне блоки первичны, а технологии их реализации — вторичны.</p>
+<p>Реализацию каждого блока разместили в отдельной директории, технологии —
+это файлы внутри нее. Также появилась документация к блоку — файл
+<code>.wiki</code> внутри блока.</p>
+<h3 class="article__heading article__heading_3" id="Независимый-блок"><a href="#Независимый-блок" class="article__heading-anchor"></a>Независимый блок</h3><p>Может быть использован в любом месте страницы.</p>
+<p>В XML блок представлен тегом в неймспейсе <code>lego</code>:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:l-head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+</code></pre>
+<p>HTML-класс блока соответствует имени этого тега:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-head"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo"</span>&gt;</span>
+</code></pre>
+<p>CSS-правила пишутся на класс:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.l-head</span>
+<span class="hljs-selector-class">.b-head-logo</span>
+</code></pre>
+<p>Все файлы (css, js, html, xsl), относящиеся к блоку, хранятся в его директории:</p>
+<pre><code class="lang-files">common/
+  block/
+    b-head-logo/
+      b-head-logo.css
+      b-head-logo.xsl
+      b-head-logo.js
+      b-head-logo.wiki
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Элемент-1"><a href="#Элемент-1" class="article__heading-anchor"></a>Элемент</h3><p>Составная часть блока, которая не может использоваться в отрыве от него.</p>
+<p>В XML элемент представлен в неймспейсе <code>lego</code> без префикса:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">lego:name</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+</code></pre>
+<p>Класс в HTML соответствует имени этого тега без префикса.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span>Авто<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+.b-head-logo .name { ... }
+</code></pre>
+<p>Файлы элемента хранятся в отдельной директории.</p>
+<pre><code class="lang-files">common/
+  block/
+    b-head-logo/
+      name/
+        b-head-logo.name.css
+        b-head-logo.name.png
+        b-head-logo.name.wiki
+</code></pre>
+<p>Имена файлов элементов пишутся через точку: <code>b-head-logo.name.css</code></p>
+<h3 class="article__heading article__heading_3" id="Модификатор-1"><a href="#Модификатор-1" class="article__heading-anchor"></a>Модификатор</h3><p>Определяет внешний вид, состояние и реже поведение блока.</p>
+<p>В XML модификатор представлен атрибутом в неймспейсе <code>lego</code>:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-tabs</span> <span class="hljs-attr">lego:theme</span>=<span class="hljs-string">"grey"</span>&gt;</span>
+</code></pre>
+<p>В HTML используется дополнительный класс:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-tabs b-head-tabs_grey"</span>&gt;</span>
+
+.b-head-tabs_grey { ... }
+</code></pre>
+<p>Файлы для модификатора находятся в отдельной директории. Имя директории модификатора начинается с подчеркивания:</p>
+<pre><code class="lang-files">common/
+    block/
+        b-head-logo/
+            _theme/
+                b-head-logo_gray.css
+                b-head-logo_gray.png
+                b-head-logo_gray.wiki
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Декларация-используемых-блоков"><a href="#Декларация-используемых-блоков" class="article__heading-anchor"></a>Декларация используемых блоков</h3><p>Все Лего-компоненты проекта описываются в XML-файле.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:page</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">lego:l-head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">lego:name</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-tabs</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search-and-content"</span>/&gt;</span>
+</code></pre>
+<p>Из него генерируются CSS-файлы.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> url(../../common/block/global/_type/global_reset.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/l-head/l-head.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-logo/b-head-logo.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-logo/name/b-head-logo.name.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-tabs/b-head-tabs.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-dropdown/b-dropdown.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-dropdown/text/b-dropdown.text.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-pseudo-link/b-pseudo-link.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-dropdown/arrow/b-dropdown.arrow.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-search/b-head-search.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/b-search.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/input/b-search.input.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/sample/b-search.sample.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/precise/b-search.precise.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/button/b-search.button.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-userinfo/b-head-userinfo.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-user/b-user.css);
+@<span class="hljs-keyword">import</span> url(block/b-head-logo/b-head-logo.css);
+@<span class="hljs-keyword">import</span> url(block/b-head-search/b-head-search.css);
+</code></pre>
+<p>На примере этого файла видно, что сначала указывается общий код,
+а потом добавляются стили, чтобы привести Лего-блоки к дизайну проекта.</p>
+<p>Из XML-декларации генерируются и JS-файлы.</p>
+<pre><code class="lang-js">include(<span class="hljs-string">"../../common/block/i-locale/i-locale.js"</span>);
+include(<span class="hljs-string">"../../common/block/b-dropdown/b-dropdown.js"</span>);
+include(<span class="hljs-string">"../../common/block/b-search/sample/b-search.sample.js"</span>);
+include(<span class="hljs-string">"../../common/block/b-head-userinfo/user/b-head-userinfo.user.js"</span>);
+</code></pre>
+<p>А также XSL-файлы.</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:stylesheet</span> <span class="hljs-attr">xmlns:xsl</span>=<span class="hljs-string">"http://www.w3.org/1999/XSL/Transform"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.0"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/i-common/i-common.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/i-items/i-items.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/l-head/l-head.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-logo/b-head-logo.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-logo/name/b-head-logo.name.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-tabs/b-head-tabs.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-dropdown/b-dropdown.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-pseudo-link/b-pseudo-link.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-search/b-head-search.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/b-search.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/input/b-search.input.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/sample/b-search.sample.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/precise/b-search.precise.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/button/b-search.button.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/b-head-userinfo.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-user/b-user.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/service/b-head-userinfo.service.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/setup/b-head-userinfo.setup.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/region/b-head-userinfo.region.xsl"</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">xsl:stylesheet</span>&gt;</span>
+</code></pre>
+<p>Мы перестали писать эти файлы руками, началась генерация кода.</p>
+<h3 class="article__heading article__heading_3" id="Скорость-селекторов-2009"><a href="#Скорость-селекторов-2009" class="article__heading-anchor"></a>Скорость селекторов (2009)</h3><p>При реализации новой версии Яндекс.Почты была поставлена задача сделать ее быстрой.</p>
+<p>Для решения задачи мы начали использовать XSL в браузере (и подгружать XML, необходимый для отрисовки данных на странице). Возникла проблема: трансформации отрабатывались быстро, но вставка в DOM полученного результата происходила очень медленно. При этом, отключение CSS решало проблему.</p>
+<p>Выяснилось, что работу замедляют селекторы
+CSS, которые при большом DOM-дереве и большой таблице стилей оказывают
+существенное влияние на скорость отрисовки браузером страницы.</p>
+<p>Результаты исследования подробно описаны в <a href="https://ru.bem.info/forum/-55/">статье</a>.</p>
+<p>Решение проблемы было уже готово — это
+<a href="https://ru.bem.info/forum/-46/">абсолютно независимые блоки (АНБ)</a>.</p>
+<p>Мы перевели все блоки в <code>Лего</code> на АНБ-нотацию и с тех пор создаем их так, чтобы
+у каждого DOM-узла был свой <code>class</code>, на который можно написать стили. Также мы не
+используем Tag Rules в CSS.</p>
+<p>В классы элементов вносится имя блока, селекторы получаются простыми и быстрыми.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo__name"</span>&gt;</span>
+        Авто
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Стабилизация-нотации"><a href="#Стабилизация-нотации" class="article__heading-anchor"></a>Стабилизация нотации</h3><p>Постепенно мы пришли к тому, что нотация в коде и структура на файловой
+системе устоялись и уже не меняются.</p>
+<ul>
+<li><p>В именах файлов разделитель <code>.</code> был заменен на <code>__</code>.
+Было <code>b-block.elem.css</code> — стало <code>b-block__elem.css</code>. Теперь они совпадают с CSS-селекторами.</p>
+</li>
+<li><p>Были реализованы модификаторы у элементов по аналогии с модификаторами блоков: <code>.b-block__elem_theme_green</code> по аналогии с <code>.b-block_theme_green</code>.</p>
+</li>
+<li><p>В имя файла модификатора и в его класс внесен тип модификатора.
+Было <code>.b-menu__item_current</code> — стало <code>.b-menu__item_state_current</code>.
+Причина этого изменения — работа с модификаторами из JavaScript.</p>
+</li>
+</ul>
+<h2 class="article__heading article__heading_2" id="БЭМ-и-open-source-2010"><a href="#БЭМ-и-open-source-2010" class="article__heading-anchor"></a>БЭМ и open source (2010)</h2><p>В 2010 году мы снова вернулись к идее open source. Мы создали организацию <a href="https://github.com/bem">bem</a> на GitHub.</p>
+<h3 class="article__heading article__heading_3" id="Библиотека-bem-bl"><a href="#Библиотека-bem-bl" class="article__heading-anchor"></a>Библиотека bem-bl</h3><p>Мы начали выносить блоки из <code>Лего</code> в <a href="https://ru.bem.info/libs/bem-bl/">bem-bl</a>,
+проводя одновременно с этим рефакторинг.</p>
+<p>Параллельно с переносом блоков в новую библиотеку публиковали информацию про них.</p>
+<h3 class="article__heading article__heading_3" id="Инструменты"><a href="#Инструменты" class="article__heading-anchor"></a>Инструменты</h3><p>Для работы с файлами по БЭМ-методам нам понадобились свои инструменты. Началась реализация инструментов <a href="https://ru.bem.info/tools/bem/bem-tools/">bem-tools</a> на JavaScript под Node.js.</p>
+<p>Возникло новое понятие — <code>уровень переопределения</code>. Так мы стали называть директории с реализацией блоков.</p>
+<p>Например, в проекте может быть:</p>
+<ol>
+<li>Публичная библиотека блоков с GitHub;</li>
+<li>Внутренняя библиотека lego;</li>
+<li>Блоки самого проекта.</li>
+</ol>
+<pre><code class="lang-files">bem-bl/
+  b-logo/
+lego/
+  b-logo/
+auto/
+  blocks/
+    b-logo/
+</code></pre>
+<p>На уровне переопределения можно задать другую схему именования директорий/файлов, отличную от нашей. Для этого нужно указать новый уровень в конфигурации:</p>
+<pre><code class="lang-files">.bem/
+  level.js
+</code></pre>
+<p>Например, вы можете задать другие разделители между именем блока
+и элемента, или не раскладывать все по директориям, а использовать
+плоскую структуру файлов.</p>
+<h3 class="article__heading article__heading_3" id="Шаблонизатор-bemhtml"><a href="#Шаблонизатор-bemhtml" class="article__heading-anchor"></a>Шаблонизатор BEMHTML</h3><p>После экспериментов с разными шаблонизаторами, был разработан
+шаблонизатор <a href="https://ru.bem.info/technology/bemhtml/current/intro/">BEMHTML</a>, который позволяет:</p>
+<ol>
+<li>писать шаблоны в БЭМ-терминах;</li>
+<li>доопределять их на <a href="/methodology/key-concepts#Уровень-переопределения">уровнях переопределения</a>;</li>
+<li>исполнять эти шаблоны как на сервере, так и в браузере, поскольку
+шаблоны компилируются в простой и быстрый JavaScript.</li>
+</ol>
+<p>Видео по BEMHTML:</p>
+<ul>
+<li><a href="https://ru.bem.info/forum/-78/">https://ru.bem.info/forum/-78/</a></li>
+<li><a href="https://ru.bem.info/forum/-79/">https://ru.bem.info/forum/-79/</a></li>
+<li><a href="https://ru.bem.info/forum/-103/">https://ru.bem.info/forum/-103/</a></li>
+<li><a href="https://ru.bem.info/forum/-108/">https://ru.bem.info/forum/-108/</a></li>
+<li><a href="https://ru.bem.info/forum/-145/">https://ru.bem.info/forum/-145/</a></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Резюме"><a href="#Резюме" class="article__heading-anchor"></a>Резюме</h2><p>Появлению БЭМ в том виде, что мы имеем сейчас, предшествовал долгий период проб и экспериментов.</p>
+<p>Хочется обратить ваше внимание, что на всех этапах своего развития это всё же был БЭМ.</p>
+<p>Тот БЭМ, что мы используем сейчас, — не единственное верное решение.
+Мы рекомендуем использовать БЭМ в ваших проектах в том объеме, в котором он принесет наибольшую пользу. Можно пробовать применять его только для верстки. Мы сами начинали именно с этого. Гибкость БЭМ-методологии позволяет настраивать ее под свои текущие процессы и организовывать работу над проектом.</p>
+<p>Главное понять, какие плюсы БЭМ принесет в ваш проект, выбрать подходящую для вас схему и начать применять у себя!</p>
+<p>Если у вас возникнут вопросы, обязательно задавайте их на нашем <a href="https://ru.bem.info/forum/">форуме</a>.</p>
+</div><ul class="article-rewind"><li class="article-rewind__prev"><a class="article-rewind__prev-link" href="/bem.info/ru/methodology/solved-problems/">Какие проблемы решает</a></li> <li class="article-rewind__next"><a class="article-rewind__next-link" href="/bem.info/ru/methodology/articles/">Статьи</a></li></ul><div class="article-amendments">Если вы заметили ошибку или хотите чем-то дополнить статью, вы всегда можете или написать нам об этом на <a class="article-amendments__issue" href="https://github.com/bem/bem-method/issues/new">Гитхабе</a>, или поправить статью с помощью <a class="article-amendments__edit" href="http://prose.io/#bem/bem-method/blob/bem-info-data/method/history/history.ru.md">prose.io.</a></div><div class="social-likes"><a class="social-likes__text">Поделиться c миром: </a><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fru.bem.info%2Fmethodology%2Fhistory%2F&amp;title=%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fru.bem.info%2Fmethodology%2Fhistory%2F&amp;title=%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fru.bem.info%2Fmethodology%2Fhistory%2F&amp;title=%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F&amp;image=">Twitter</a></div></div><footer class="footer page-bg"><div class="legos legos_inverted"><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2"></div></div><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://web-standards.slack.com/messages/bem/">Slack</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_ru">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_ru/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"/></div></noscript><script src="/bem.info/ru/methodology.ru.min.js"></script></body></html>

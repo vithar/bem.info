@@ -1,0 +1,246 @@
+<!DOCTYPE html><html class="ua_js_no"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Миграция на 1.0 / enb-bem-techs / ENB / Toolbox / БЭМ</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");</script><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic"/><link rel="stylesheet" href="/bem.info/ru/toolbox.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/><meta property="og:image" content="https://ru.bem.info/og_image/logo_theme_stripe.png"/><meta property="og:url" content="/toolbox/enb/enb-bem-techs/migration-1/"/><meta property="og:type" content="article"/><meta property="og:description" content="Миграция на 1.0"/><meta property="og:keywords" content="toolbox, enb, enb-bem-techs"/><link rel="shortcut icon" href="/bem.info/ru/favicon.ico"/></head><body class="page"><div class="header i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="/bem.info/ru/"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><ul class="lang-switcher header__lang"><li class="lang-switcher__item"><a class="lang-switcher__link" href="/bem.info/en/toolbox/enb/enb-bem-techs/migration-1/">en</a></li><li class="lang-switcher__item"><span class="lang-switcher__current">ru</span></li></ul><a class="header__forum" href="/bem.info/ru/forum/">Форум</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><form class="form search__form search__form_site_toolbox i-bem" data-bem='{"form":{}}' action="https://yandex.ru/sitesearch"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="text" placeholder="Искать" autocomplete="off" type="search"/></span></span><input type="hidden" name="reqenc"/><input type="hidden" name="searchid" value="1944806"/><input type="hidden" name="l10n" value="ru"/><div class="search-icon search__submit"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></form></div><div class="header__menu"><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/ru/toolbox/">Toolbox</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/ru/toolbox/enb/">ENB</a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/">enb-bem-techs</a></li></ul><ul class="nav"><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-bundle/">Сборка бандла</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-page/">Сборка страницы</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-merged-bundle/">Сборка merged-бандла</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-dist/">Сборка дистрибутива</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/api/">API</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/changelog/">Изменения</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/migration-2/">Миграция на 2.0</a></li><li class="nav__item nav__item_current">Миграция на 1.0</li></ul></div><div class="header__toggle search-icon"><span class="header__toggle-line"></span></div></div><div class="sitemap i-bem" data-bem='{"sitemap":{}}'><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="/bem.info/ru/methodology/">Методология</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/key-concepts/">Основные понятия</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/naming-convention/">Соглашение по именованию</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/js-principles/">Особенности JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/filesystem/">Файловая система</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/build/">Сборка</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/declarations/">Декларации</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/solved-problems/">Какие проблемы решает</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/history/">История создания</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/articles/">Статьи</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_toolbox"><a class="sitemap__link" href="/bem.info/ru/toolbox/">Toolbox</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/">ENB</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/">enb-bem-techs</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-bundle/">Сборка бандла</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-page/">Сборка страницы</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-merged-bundle/">Сборка merged-бандла</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/build-dist/">Сборка дистрибутива</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/changelog/">Изменения</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/migration-2/">Миграция на 2.0</a></li><li class="sitemap__tree-item-3"><strong class="sitemap__current">Миграция на 1.0</strong></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-js/">enb-js</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-js/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-js/changelog/">Изменения</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-modules/">enb-modules</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-modules/changelog/">Изменения</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/">enb-css</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/ie/">Сборка бандла для IE</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-css/changelog/">Изменения</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-stylus/">enb-stylus</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-stylus/api/">API</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/toolbox/enb/enb-stylus/changelog/">Изменения</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/toolbox/bem-tools/">bem-tools</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/">BEM SDK</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/bem-naming/">bem-naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/bem-config/">bem-config</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/toolbox/sdk/bem-fs-scheme/">bem-fs-scheme</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_platform"><a class="sitemap__link">Платформа</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link">Технологии</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/i-bem/v2/i-bem-js/">i-bem</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/ru/technology/deps/about/">DEPS</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/bemjson/v2/bemjson/">BEMJSON</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/bemhtml/v2/intro/">BEMHTML</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/ru/technology/bemtree/v2/bemtree/">BEMTREE</a></li><div class="sitemap__tree-item-0"><a class="sitemap__link" href="/bem.info/ru/libs/">Библиотеки</a></div><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/libs/bem-core/">bem-core</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/libs/bem-components/">bem-components</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/libs/bem-history/">bem-history</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_community"><a class="sitemap__link" href="/bem.info/ru/community/">Сообщество</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/blog/">Блог</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/events/">События</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/ru/forum/">Форум</a></li></ul></div></div><div class="article-wrap"><div class="article"><ul class="article-tags"><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/ru/tags/toolbox">toolbox</a></li><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/ru/tags/enb">enb</a></li><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/ru/tags/enb-bem-techs">enb-bem-techs</a></li></ul><h1 class="article__heading article__heading_1" id="Руководство-по-переходу-на-версию-code100code"><a href="#Руководство-по-переходу-на-версию-code100code" class="article__heading-anchor"></a>Руководство по переходу на версию <code>1.0.0</code></h1><p>Базовые технологии вынесены из пакета <code>enb@0.13.x</code> в пакет <code>enb-bem-techs@1.0.0</code>.</p>
+<p>Во время перехода на новые версии следует:</p>
+<ol>
+<li>Очистить результаты прошлых сборок — команда <code>enb make clean</code>.</li>
+<li>Собирать с новыми технологиями без учета кэша — команда <code>enb make -n</code>.</li>
+</ol>
+<p>Это нужно для того, чтобы технологии отработали правильно, не опираясь на результаты предыдущих сборок.</p>
+<h2 class="article__heading article__heading_2" id="Обязательные-требования"><a href="#Обязательные-требования" class="article__heading-anchor"></a>Обязательные требования</h2><ul>
+<li><a href="#Технологии">Технологии</a></li>
+<li><a href="#Манипуляции-с-bemdecl--и-deps-файлами">Манипуляции с BEMDECL- и DEPS-файлами</a></li>
+<li><a href="#Получение-bemdecl-файла-из-bemjson-и-bemdecl-файлов">Получение BEMDECL-файла из BEMJSON и BEMDECL-файлов</a></li>
+<li><a href="#Объединение-bemdecl-файлов-из-разных-нод">Объединение BEMDECL-файлов из разных нод</a></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Технологии"><a href="#Технологии" class="article__heading-anchor"></a>Технологии</h3><p>Вместо технологий из пакета <code>enb</code> следует использовать технологии из пакета <code>enb-bem-techs</code>.</p>
+<p><strong>Внимание:</strong> Из-за того, что некоторые технологии стали возвращать и принимать результаты в BEMDECL-формате,
+необходимо перейти на новые технологии разом, а не постепенно.</p>
+<ul>
+<li><code>enb/techs/levels</code> → <code>enb-bem-techs/techs/levels</code></li>
+<li><code>enb/techs/bemdecl-from-bemjson</code> → <code>enb-bem-techs/techs/bemjson-to-bemdecl</code></li>
+<li><code>enb/techs/deps</code> → <code>enb-bem-techs/techs/deps</code></li>
+<li><code>enb/techs/deps-old</code> → <code>enb-bem-techs/techs/deps-old</code></li>
+<li><code>enb/techs/bemdecl-from-deps-by-tech</code> → <code>enb-bem-techs/techs/deps-by-tech-to-bemdecl</code></li>
+<li><code>enb/techs/files</code> → <code>enb-bem-techs/techs/files</code></li>
+<li><code>enb/techs/bemdecl-provide</code> → <code>enb-bem-techs/techs/provide-bemdecl</code></li>
+<li><code>enb/techs/deps-provide</code> → <code>enb-bem-techs/techs/provide-deps</code></li>
+<li><code>enb/techs/bemdecl-merge</code> → <code>enb-bem-techs/techs/merge-bemdecl</code></li>
+<li><code>enb/techs/deps-merge</code> → <code>enb-bem-techs/techs/merge-deps</code></li>
+<li><code>enb/techs/deps-subtract</code> → <code>enb-bem-techs/techs/subtract-deps</code></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Манипуляции-с-bemdecl--и-deps-файлами"><a href="#Манипуляции-с-bemdecl--и-deps-файлами" class="article__heading-anchor"></a>Манипуляции с BEMDECL- и DEPS-файлами</h3><p>Чтобы объединить несколько BEMDECL-файлов, каждый из них должен быть представлен в BEMDECL-формате. Для формирования BEMDECL-файлов на основе других файлов следует использовать технологии, которые возвращают результат в BEMDECL-формате: <code>bemjson-to-bemdecl</code>, <code>deps-by-tech-to-bemdecl</code>, <code>merge-bemdecl</code> и <code>provide-bemdecl</code>.</p>
+<p>Чтобы объединить несколько DEPS-файлов или вычесть один DEPS-файл из другого, каждый из них должен быть представлен в DEPS-формате. Для формирования DEPS-файлов на основе других файлов следует использовать технологии, которые возвращают результат в DEPS-формате: <code>merge-deps</code> и <code>provide-deps</code>.</p>
+<h3 class="article__heading article__heading_3" id="Получение-bemdecl-файла-из-bemjson--и-bemdecl-файлов"><a href="#Получение-bemdecl-файла-из-bemjson--и-bemdecl-файлов" class="article__heading-anchor"></a>Получение BEMDECL-файла из BEMJSON- и BEMDECL-файлов</h3><p>Дополняем BEMDECL-файл, построенный по BEMJSON-файлу, другим BEMDECL-файлом.</p>
+<p><strong>Было:</strong></p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'page'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTechs([
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>), { target: <span class="hljs-string">'?.bemjson.js'</span> }],
+
+            <span class="hljs-comment">// Результат может быть как в DEPS-формате, так и в BEMDECL-формате</span>
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>), { target: <span class="hljs-string">'required.bemdecl.js'</span> }],
+
+            <span class="hljs-comment">// Результат в DEPS-формате, но по пути `?.bemdecl.js`</span>
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs/techs/bemjson-to-bemdecl'</span>)],
+
+            <span class="hljs-comment">// Результат в DEPS-формате, но по пути `?.bemdecl.js`</span>
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs/techs/bemdecl-merge'</span>), {
+                bemdeclSources: [<span class="hljs-string">'?.bemdecl.js'</span>, <span class="hljs-string">'required.bemdecl.js'</span>],
+                bemdeclTarget: <span class="hljs-string">'all.bemdecl.js'</span>
+            }],
+            <span class="hljs-comment">/* ... */</span>
+        ]);
+    }
+};
+</code></pre>
+<p><strong>Стало:</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> techs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs'</span>),
+    provide = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>);
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'page'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTechs([
+            [provide, { target: <span class="hljs-string">'?.bemjson.js'</span> }],
+
+            <span class="hljs-comment">// Результат должен быть в BEMDECL-формате</span>
+            [provide, { target: <span class="hljs-string">'required.bemdecl.js'</span> }],
+
+            <span class="hljs-comment">// Результат в BEMDECL-формате по пути `?.bemdecl.js`</span>
+            [techs.bemdeclToBemjson],
+
+            <span class="hljs-comment">// Результат в BEMDECL-формате по пути `?.bemdecl.js`</span>
+            [techs.mergeBemdecl, {
+                sources: [<span class="hljs-string">'?.bemdecl.js'</span>, <span class="hljs-string">'required.bemdecl.js'</span>],
+                target: <span class="hljs-string">'all.bemdecl.js'</span>
+            }],
+            <span class="hljs-comment">/* ... */</span>
+        ]);
+    }
+};
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Объединение-bemdecl-файлов-из-разных-нод"><a href="#Объединение-bemdecl-файлов-из-разных-нод" class="article__heading-anchor"></a>Объединение BEMDECL-файлов из разных нод</h3><p>Дополняем BEMDECL-файл текущей ноды (index) BEMDECL-файлом из другой ноды (common).</p>
+<p><strong>Было:</strong></p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'bundles/index'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTechs([
+            <span class="hljs-comment">// Результат может быть как в DEPS-формате, так и в BEMDECL-формате</span>
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>), { target: <span class="hljs-string">'?.bemdecl.js'</span> }],
+
+            <span class="hljs-comment">// Результат в DEPS-формате, но по пути `common.bemdecl.js`</span>
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs/techs/bemdecl-provider'</span>), {
+                sourceNodePath: <span class="hljs-string">'bundles/common'</span>,
+                sourceTarget: <span class="hljs-string">'common.bemdecl.js'</span>,
+                depsTarget: <span class="hljs-string">'common.bemdecl.js'</span>
+            }],
+
+            <span class="hljs-comment">// Результат в DEPS-формате, но по пути `all.bemdecl.js`</span>
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs/techs/deps-bemdecl'</span>), {
+                depsSources: [<span class="hljs-string">'common.bemdecl.js'</span>, <span class="hljs-string">'?.bemdecl.js'</span>],
+                depsTarget: <span class="hljs-string">'all.bemdecl.js'</span>
+            }],
+            <span class="hljs-comment">/* ... */</span>
+        ]);
+    }
+};
+</code></pre>
+<p><strong>Стало:</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> techs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs'</span>),
+    provide = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>);
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'bundles/index'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTechs([
+            <span class="hljs-comment">// Результат должен быть в BEMDECL-формате</span>
+            [provide, { target: <span class="hljs-string">'?.bemdecl.js'</span> }],
+
+            <span class="hljs-comment">// Результат в BEMDECL-формате по пути `common.bemdecl.js`</span>
+            [techs.provideBemdecl, {
+                node: <span class="hljs-string">'bundles/common'</span>,
+                source: <span class="hljs-string">'common.bemdecl.js'</span>,
+                target: <span class="hljs-string">'common.bemdecl.js'</span>
+            }],
+
+            <span class="hljs-comment">// Результат в BEMDECL-формате по пути `all.bemdecl.js`</span>
+            [techs.mergeBemdecl, {
+                sources: [<span class="hljs-string">'common.bemdecl.js'</span>, <span class="hljs-string">'?.bemdecl.js'</span>],
+                target: <span class="hljs-string">'all.bemdecl.js'</span>
+            }],
+            <span class="hljs-comment">/* ... */</span>
+        ]);
+    }
+};
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Рекомендации"><a href="#Рекомендации" class="article__heading-anchor"></a>Рекомендации</h2><ul>
+<li><a href="#Подключение-модулей-технологий">Подключение модулей технологий</a></li>
+<li><a href="#Сканирование-уровней">Сканирование уровней</a></li>
+<li><a href="#Декларация-бандлов">Декларация бандлов</a></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Подключение-модулей-технологий"><a href="#Подключение-модулей-технологий" class="article__heading-anchor"></a>Подключение модулей технологий</h3><p>Вместо подключения каждого модуля технологии по принципу <code>require(&#39;enb/techs/tech-name&#39;)</code> следует получать
+все базовые БЭМ-технологии с помощью <code>require(&#39;enb-bem-techs&#39;)</code>.</p>
+<p><strong>Было:</strong></p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'node'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTechs([
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/levels'</span>), { levels: getLevels(config) }],
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>), { target: <span class="hljs-string">'?.bemjson.js'</span> }],
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/bemjson-to-bemdecl'</span>)],
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/deps'</span>)],
+            [<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/files'</span>)],
+            <span class="hljs-comment">/* ... */</span>
+        ]);
+    }
+};
+</code></pre>
+<p><strong>Стало:</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> techs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs'</span>),
+    provide = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/file-provider'</span>);
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'node'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTechs([
+            [techs.levels, { levels: getLevels(config) }],
+            [provide, { target: <span class="hljs-string">'?.bemjson.js'</span> }],
+            [techs.bemjsonToBemdecl],
+            [techs.deps],
+            [techs.files],
+            <span class="hljs-comment">/* ... */</span>
+        ]);
+    }
+};
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Сканирование-уровней"><a href="#Сканирование-уровней" class="article__heading-anchor"></a>Сканирование уровней</h3><p>Вместо абсолютных путей до уровней переопределения можно использовать пути относительно корня проекта.</p>
+<p><strong>Было:</strong></p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'node'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTech([<span class="hljs-built_in">require</span>(<span class="hljs-string">'enb/techs/levels'</span>), {
+            levels: getLevels(config)
+        }]);
+
+        nodeConfig.addTarget(<span class="hljs-string">'?.levels'</span>);
+    });
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getLevels</span>(<span class="hljs-params">config</span>) </span>{
+    <span class="hljs-keyword">return</span> [
+        { path: <span class="hljs-string">'libs/bem-core/common.blocks'</span>, check: <span class="hljs-literal">false</span> },
+        { path: <span class="hljs-string">'libs/bem-core/desktop.blocks'</span>, check: <span class="hljs-literal">false</span> },
+        <span class="hljs-string">'common.blocks'</span>,
+        <span class="hljs-string">'desktop.blocks'</span>
+    ].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">level</span>) </span>{
+        <span class="hljs-keyword">return</span> config.resolvePath(level);
+    });
+}
+</code></pre>
+<p><strong>Стало:</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> techs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'enb-bem-techs'</span>);
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">config</span>) </span>{
+    config.node(<span class="hljs-string">'node'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nodeConfig</span>) </span>{
+        nodeConfig.addTech([techs.levels, {
+            levels: [
+                { path: <span class="hljs-string">'libs/bem-core/common.blocks'</span>, check: <span class="hljs-literal">false</span> },
+                { path: <span class="hljs-string">'libs/bem-core/desktop.blocks'</span>, check: <span class="hljs-literal">false</span> },
+                <span class="hljs-string">'common.blocks'</span>,
+                <span class="hljs-string">'desktop.blocks'</span>
+            ]
+        }]);
+
+        nodeConfig.addTarget(<span class="hljs-string">'?.levels'</span>);
+    });
+}
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Декларация-бандлов"><a href="#Декларация-бандлов" class="article__heading-anchor"></a>Декларация бандлов</h3><p>Формировать список БЭМ-сущностей для бандла следует в BEMDECL-, а не в DEPS-формате.</p>
+<p><strong>Было:</strong></p>
+<p><strong>bundle.bemdecl.js</strong></p>
+<pre><code class="lang-js">exports.deps = [
+    { block: <span class="hljs-string">'input'</span> },
+    { block: <span class="hljs-string">'input'</span>, mod: <span class="hljs-string">'size'</span>, val: <span class="hljs-string">'s'</span> },
+    { block: <span class="hljs-string">'input'</span>, mod: <span class="hljs-string">'size'</span>, val: <span class="hljs-string">'m'</span> }
+];
+</code></pre>
+<p><strong>Стало:</strong></p>
+<p><strong>bundle.bemdecl.js</strong></p>
+<pre><code class="lang-js">exports.blocks = [
+    {
+        name: <span class="hljs-string">'input'</span>,
+        mods: [{ name: <span class="hljs-string">'size'</span>, vals: [{ name: <span class="hljs-string">'s'</span> }, { name: <span class="hljs-string">'m'</span> }]]
+    }
+];
+</code></pre>
+</div><ul class="article-rewind"><li class="article-rewind__prev"><a class="article-rewind__prev-link" href="/bem.info/ru/toolbox/enb/enb-bem-techs/migration-2/">Миграция на 2.0</a></li> <li class="article-rewind__next"><a class="article-rewind__next-link" href="/bem.info/ru/toolbox/enb/enb-js/">enb-js</a></li></ul><div class="article-amendments">Если вы заметили ошибку или хотите чем-то дополнить статью, вы всегда можете или написать нам об этом на <a class="article-amendments__issue" href="https://github.com/enb/enb-bem-techs/issues/new">Гитхабе</a>, или поправить статью с помощью <a class="article-amendments__edit" href="http://prose.io/#enb/enb-bem-techs/blob/master/MIGRATION-1.md">prose.io.</a></div><div class="social-likes"><a class="social-likes__text">Поделиться c миром: </a><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fru.bem.info%2Ftoolbox%2Fenb%2Fenb-bem-techs%2Fmigration-1%2F&amp;title=%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BD%D0%B0%201.0&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fru.bem.info%2Ftoolbox%2Fenb%2Fenb-bem-techs%2Fmigration-1%2F&amp;title=%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BD%D0%B0%201.0&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fru.bem.info%2Ftoolbox%2Fenb%2Fenb-bem-techs%2Fmigration-1%2F&amp;title=%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BD%D0%B0%201.0&amp;image=">Twitter</a></div></div><footer class="footer page-bg"><div class="legos legos_inverted"><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div></div><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://web-standards.slack.com/messages/bem/">Slack</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_ru">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_ru/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"/></div></noscript><script src="/bem.info/ru/toolbox.ru.min.js"></script></body></html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html><html class="ua_js_no"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>History / Methodology / BEM</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");</script><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic"/><link rel="stylesheet" href="/bem.info/en/methodology.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/><meta property="og:image" content="https://ru.bem.info/og_image/logo_theme_stripe.png"/><meta property="og:url" content="/methodology/history/"/><meta property="og:type" content="article"/><meta property="og:description" content="History"/><meta property="og:keywords" content="methodology"/><link rel="shortcut icon" href="/bem.info/en/favicon.ico"/></head><body class="page"><div class="header i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="/bem.info/en/"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><ul class="lang-switcher header__lang"><li class="lang-switcher__item"><span class="lang-switcher__current">en</span></li><li class="lang-switcher__item"><a class="lang-switcher__link" href="/bem.info/ru/methodology/history/">ru</a></li></ul><a class="header__forum" href="/bem.info/en/forum/">Forum</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><form class="form search__form search__form_site_methodology i-bem" data-bem='{"form":{}}' action="https://yandex.com/sitesearch"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="text" placeholder="Search" autocomplete="off" type="search"/></span></span><input type="hidden" name="reqenc"/><input type="hidden" name="searchid" value="1944806"/><input type="hidden" name="l10n" value="en"/><div class="search-icon search__submit"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></form></div><div class="header__menu"><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/en/methodology/">Methodology</a></li></ul><ul class="nav"><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/key-concepts/">Key concepts</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/naming-convention/">Naming convention</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/js/">JavaScript</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/js-principles/">JavaScript principles</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/filesystem/">Filesystem</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/build/">Build</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/declarations/">Declarations</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/solved-problems/">Solved problems</a></li><li class="nav__item nav__item_current">History</li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/articles/">Articles</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/faq/">FAQ</a></li></ul></div><div class="header__toggle search-icon"><span class="header__toggle-line"></span></div></div><div class="sitemap i-bem" data-bem='{"sitemap":{}}'><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="/bem.info/en/methodology/">Methodology</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/key-concepts/">Key concepts</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/naming-convention/">Naming convention</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/js-principles/">JavaScript principles</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/filesystem/">Filesystem</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/build/">Build</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/declarations/">Declarations</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/solved-problems/">Solved problems</a></li><li class="sitemap__tree-item-1"><strong class="sitemap__current">History</strong></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/articles/">Articles</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_toolbox"><a class="sitemap__link" href="/bem.info/en/toolbox/">Toolbox</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/toolbox/enb/">ENB</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/enb/test/">ENB TEST</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/toolbox/bem-tools/">bem-toolbox</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/">BEM SDK</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/bem-naming/">bem-naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/bem-config/">bem-config</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/bem-fs-scheme/">bem-fs-scheme</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_platform"><a class="sitemap__link">Platform</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link">Technologies</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/i-bem/v2/i-bem-js/">i-bem</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/technology/deps/about/">DEPS</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/bemjson/v2/bemjson/">BEMJSON</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/bemhtml/v2/intro/">BEMHTML</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/bemtree/v2/bemtree/">BEMTREE</a></li><div class="sitemap__tree-item-0"><a class="sitemap__link" href="/bem.info/en/libs/">Libraries</a></div><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/libs/bem-core/">bem-core</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/libs/bem-components/">bem-components</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/libs/bem-history/">bem-history</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_community"><a class="sitemap__link" href="/bem.info/en/community/">Community</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/blog/">Blog</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/events/">Events</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/forum/">Forum</a></li></ul></div></div><div class="article-wrap"><div class="article"><ul class="article-tags"><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/en/tags/methodology">methodology</a></li></ul><h1 class="article__heading article__heading_1" id="the-history-of-bem"><a href="#the-history-of-bem" class="article__heading-anchor"></a>The history of BEM</h1><p>Once upon a time, in a distant country far-far away, an IT company named <a href="https://company.yandex.com">Yandex</a> started developing web search
+and affiliated services. Time went by and services were growing, and more and more front-end developers put
+their tireless efforts into improving the ecosystem of Yandex.</p>
+<p>Great things they did, and amazing tools they built, making their developers lives easier,
+and times now have come to share that knowledge with the community, to embrace the magic power
+of Open Source and benefit all good people around.</p>
+<p>This article tells about Yandex front-end developers constantly revising and improving the way they build web pages.
+Front-end developers are well known for their enormous curiosity (that often brings innovation) and their remarkable
+laziness that makes them devise sophisticated systems to save precious time, to unify and automate everything.</p>
+<p>This is how many exciting things were born into life, but now let&#39;s travel back in time to 2005 and sneak a peek over
+a shoulder of a really-really-busy Yandex front-end developer, and thus see...</p>
+<h2 class="article__heading article__heading_2" id="where-it-all-began"><a href="#where-it-all-began" class="article__heading-anchor"></a>...where it all began</h2><p>Back in 2005, the focus was still pretty much on the server side of things. From frontender perspective, a typical Yandex project was a set of static HTML pages that served as a base reference for creating advanced templates like XSL stylesheets.</p>
+<p>These pages were kept in a separate folder and looked like this after a checkout:</p>
+<pre><code class="lang-files">about.html
+index.html
+…
+project.css
+project.js
+i/
+  yandex.png
+</code></pre>
+<p>There was a static HTML file for each page, with all the CSS pushed into a single stylesheet, <code>project.css</code>,
+and all Javascript placed in a single <code>project.js</code>; both files were shared between project pages.</p>
+<p>At those times, JavaScript was only sparsely applied to some controls, so all the interaction magic for the whole
+project could fit comfortably into a single small file.</p>
+<p>Images were placed into a separate folder, as they were numerous. With IE 5 roaming in the wild and no CSS3,
+images were used for all sorts of eye-candy, even for creating rounded corners (although none of the younger
+web developers would probably believe me :-)).</p>
+<p>To keep some structure, style definitions for different page sections were separated using plain
+CSS comments like this:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Content container (begin) */</span>
+    <span class="hljs-selector-id">#body</span>
+    {
+        <span class="hljs-attribute">font</span>: <span class="hljs-number">0.8em</span> Arial, sans-serif;
+
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0.5em</span> <span class="hljs-number">1.95%</span> <span class="hljs-number">0.5em</span> <span class="hljs-number">2%</span>;
+    }
+<span class="hljs-comment">/* Content container (end) */</span>
+
+<span class="hljs-comment">/* Graphical banner (begin) */</span>
+    <span class="hljs-selector-class">.banner</span>
+    {
+        <span class="hljs-attribute">text-align</span>: center;
+    }
+
+    <span class="hljs-selector-class">.banner</span> <span class="hljs-selector-tag">a</span>
+    {
+        <span class="hljs-attribute">text-decoration</span>: none;
+    }
+<span class="hljs-comment">/* Graphical banner (end) */</span>
+</code></pre>
+<p>Both IDs and classnames were used in the HTML markup.</p>
+<p>Static HTML was manually copied into production XSL stylesheets, and all changes were synced two-way, manually.</p>
+<p>That was hard, and even when it wasn&#39;t hard, it was dull.</p>
+<h2 class="article__heading article__heading_2" id="mid-scale-projects"><a href="#mid-scale-projects" class="article__heading-anchor"></a>Mid-scale projects</h2><p>At the beginning of 2006, the first version of Yandex.Music had been under heavy development.
+Multiple pages, each unlike the other, didn&#39;t fit well into familiar simplistic concepts.</p>
+<p>Dozens of CSS classes you had to invent meaningful names for, a growing number of unintentional
+dependencies spread along the project — all that had been calling for a better solution.</p>
+<p>Typical piece of CSS code from those days:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Albums (begin) */</span>
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.info</span>
+    {
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">8.5em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.title</span>
+    {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0.3em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.album</span> <span class="hljs-selector-class">.listen</span>
+    {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.3em</span> <span class="hljs-number">1em</span> <span class="hljs-number">0</span> <span class="hljs-number">1em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.album</span> <span class="hljs-selector-class">.buy</span>
+    {
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.4em</span> <span class="hljs-number">1em</span> <span class="hljs-number">0</span> <span class="hljs-number">1.6em</span>;
+    }
+
+    <span class="hljs-selector-class">.result</span> <span class="hljs-selector-class">.albums</span> <span class="hljs-selector-class">.info</span> <span class="hljs-selector-tag">i</span>
+    {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">85%</span>;
+    }
+<span class="hljs-comment">/* Albums (end) */</span>
+</code></pre>
+<p>See that long cascade rules are used throughout the code.</p>
+<p>Have another look:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Background images (begin) */</span>
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">71px</span>;
+        <span class="hljs-attribute">background</span>: transparent <span class="hljs-built_in">url</span>(../i/foot-1.png) <span class="hljs-number">4%</span> <span class="hljs-number">50%</span> no-repeat;
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">21%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-2.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">38%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-3.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">54%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-4.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">71%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-5.png);
+    }
+
+    <span class="hljs-selector-id">#foot</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">div</span>
+    {
+        <span class="hljs-attribute">background-position</span>: <span class="hljs-number">87%</span>;
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(../i/foot-6.png);
+    }
+<span class="hljs-comment">/* Background images (end) */</span>
+</code></pre>
+<p>See that <code>id</code> and tag names selectors are used in many rules.</p>
+<p>At the same time, even bigger project was started — <a href="http://wow.yandex.ru">Yaru</a> — a blogging platform, a place for people to interact, to share, to read and to engage.</p>
+<p>There were dozens of various pages to support, and with the old-fashioned approach the code was running out of control on many levels.</p>
+<h3 class="article__heading article__heading_3" id="blocks-to-the-rescue"><a href="#blocks-to-the-rescue" class="article__heading-anchor"></a>Blocks to the rescue</h3><p>We needed to specify a data domain for managing page interface objects. This was a methodology thing,
+we needed to put more clarity into the way we work with concepts like
+<code>class</code>, <code>tag</code>, <code>visual component</code> etc.</p>
+<p>For a typical web page of a Yandex project, HTML structure and its CSS styles were still the focus of
+our development efforts, and JavaScript was understood as a supplementary technology.</p>
+<p>For easier maintenance of HTML/CSS for many different components, a new term was invented: <code>block</code>.
+Block is a part of a page design or layout having its specific and unique meaning defined either
+semantically, or visually.</p>
+<p>In most cases, any distinct page element (either complex or simple) may be seen as a block.
+Then its HTML container gets a unique CSS class, which is also used as a block name.</p>
+<p>CSS classes for blocks got prefixes (<code>b-</code>, <code>c-</code>, <code>g-</code>) to provide sort of a namespace emulation in CSS.</p>
+<p>The naming convention itself was changed later, here&#39;s the initial list explained:</p>
+<ul>
+<li><strong>b-</strong>  block
+an independent block, placed on a page wherever you need it</li>
+<li><strong>с-</strong>  control
+a control (an independent block) with a JavaScript object bound to it</li>
+<li><strong>g-</strong>  global
+a global definition, used sparingly and always defined for a specific, unique reason;
+the number of these definitions kept at a minimum.</li>
+</ul>
+<p>Some suffixes were employed as well, e.g.:</p>
+<ul>
+<li><strong>-nojs</strong>   no javascript
+style rule to be applied with JavaScript turned off. The onload callback may contain an <code>init()</code>
+function call that removes these suffixes from all objects, thus semantically marking them
+up as &quot;JavaScript-enabled&quot;.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="what39s-inside"><a href="#what39s-inside" class="article__heading-anchor"></a>What&#39;s inside?</h3><p>In an HTML container forming a block, some nodes get a distinct CSS classname. This not only facilitates the creation of tagname-independent style rules, but also assigns semantically meaningful roles to each node. Such inner nodes are called &quot;block elements&quot;, or simply &quot;elements&quot;.</p>
+<p>The core distinction between a block and an element is the element&#39;s inability to exist out of its parent block context. As long as you cannot detach something from a block, it&#39;s an element; detachable elements (probably) should become blocks themselves.</p>
+<p>At first, elements could have been defined only inside their parent block container; later, a technique was provided to place some elements outside and still keep a block consistent.</p>
+<p>In stylesheets, elements with lots of CSS got extra indentation and were wrapped in comments:</p>
+<pre><code class="lang-css">/* Head (begin) */
+    .b-head { … }
+
+    /* Logo (begin) */
+        .b-head .logo { … }
+        .b-head .logo a { … }
+    /* Logo (end) */
+
+    /* Right side (begin) */
+    .b-head .right { … }
+
+        /* Info (begin) */
+            .b-head .info { … }
+            .b-head .info .exit a { … }
+        /* Info (end) */
+
+        /* Search (begin) */
+            .b-head .search { … }
+            .b-head .search div div, .b-head .search div div i { … }
+        /* Search (end) */
+    /* Right side (end) */
+/* Head (end) */
+</code></pre>
+<h3 class="article__heading article__heading_3" id="project-file-structure-evolves"><a href="#project-file-structure-evolves" class="article__heading-anchor"></a>Project file structure evolves</h3><p>At Yandex, a front-end developers usually support more than one project.</p>
+<p>Switching between different repositories and various branches is easier when all projects
+use the same (or very similar) file structure.</p>
+<p>Granularity is another requirement as it provides more flexibility for version control systems
+and helps avoid conflicts during concurrent development.</p>
+<p>This led us to a more unified structure.</p>
+<p>CSS, JavaScript, and image files reside in separate folders.</p>
+<p>JavaScript was employed more and more daily, thus the addition of optional components and libraries.</p>
+<p>Typical file structure:</p>
+<pre><code class="lang-files">index.html
+css/
+  yaru.css
+  yaru-ie.css
+js/
+  yaru.js
+i/
+  yandex.png
+</code></pre>
+<p>MSIE-specific hacks could have gone into the main CSS file (<code>yaru.css</code>) if they were in compliance with the CSS standards:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Common definitions (begin) */</span>
+    <span class="hljs-selector-tag">body</span>
+    {
+        <span class="hljs-attribute">font</span>: <span class="hljs-number">0.8em</span> Arial, sans-serif;
+
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2em</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+    }
+
+    * <span class="hljs-selector-tag">html</span> <span class="hljs-selector-tag">body</span>
+    {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80%</span>;
+    }
+</code></pre>
+<p>Non-valid workarounds were put in a standalone <code>yaru-ie.css</code> (loaded with IE-only conditional comments).</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Common blocks (begin) */</span>
+    <span class="hljs-comment">/* Artist (begin) */</span>
+        <span class="hljs-selector-class">.b-artist</span> <span class="hljs-selector-class">.i</span> <span class="hljs-selector-tag">i</span>
+        {
+            <span class="hljs-attribute">top</span>: <span class="hljs-built_in">expression</span>(7 + (90 - this.parentNode.getElementsByTagName(<span class="hljs-string">'img'</span>)[<span class="hljs-number">0</span>].height)/<span class="hljs-number">2</span>);
+            <span class="hljs-attribute">filter</span>:progid:DXImageTransform.Microsoft.<span class="hljs-built_in">AlphaImageLoader</span>(src=<span class="hljs-string">'../i/sticker-lt.png'</span>, sizingMethod=<span class="hljs-string">'crop'</span>);
+        }
+</code></pre>
+<h2 class="article__heading article__heading_2" id="building-up-a-framework-the-beginning"><a href="#building-up-a-framework-the-beginning" class="article__heading-anchor"></a>Building up a framework: the beginning</h2><p>Designing similar projects eventually leads to re-creating the same blocks over and over again.</p>
+<p>Yandex is a portal having more than 100 services sharing the same corporate style, so careless
+copy/paste doesn&#39;t work really well on this scale.</p>
+<p>So, to have something to begin with, we had a small compilation of reusable components, which
+inside Yandex was referred to as &quot;common blocks library&quot;, or simply &quot;the Common&quot;.</p>
+<p>First page fragments to be unified were: header, footer and some typographic CSS definitions.</p>
+<p>The corresponding files were hosted on an internal dedicated server (<strong>common.cloudkill.yandex.ru</strong> in the listings below).</p>
+<p>This was the very beginning of our unified framework.</p>
+<p>Styles could be imported directly from that server:</p>
+<pre><code class="lang-css">@import url(http://common.cloudkill.yandex.ru/css/global.css);
+@import url(http://common.cloudkill.yandex.ru/css/head/common.css);
+@import url(http://common.cloudkill.yandex.ru/css/static-text.css);
+@import url(http://common.cloudkill.yandex.ru/css/foot/common-absolute.css);
+@import url(http://common.cloudkill.yandex.ru/css/foot/common-absolute-4-columns.css);
+@import url(http://common.cloudkill.yandex.ru/css/list/hlist.css);
+@import url(http://common.cloudkill.yandex.ru/css/list/hlist-middot.css);
+@import url(http://common.cloudkill.yandex.ru/css/dropdown/dropdown.css);
+@import url(http://common.cloudkill.yandex.ru/css/dropdown/dropdown-arrow.css);
+@import url(slider.css);
+
+/* Header (begin) */
+    /* Service (begin) */
+        .b-head .service h1 { … }
+        .b-head .service h1, .b-head .service h1 a, .b-head .service h1 b { … }
+</code></pre>
+<p>Obviousy, too many imports, page loads slowly! So, we decided to pre-compile styles (and later, JS files) before deployment.</p>
+<p>The compilation replaces <code>@import</code> directives with the actual contents of external files (this is called <code>inlining</code>)
+and performs more optimizations, e.g. unrequired to browser whitespaces and comments.</p>
+<p>Our internal inlining tool evolved from a simple wrapper perl script into an open source project <a href="https://en.bem.info/tools/optimizers/borschik/">borschik</a>; try it out!</p>
+<h2 class="article__heading article__heading_2" id="independent-blocks-as-a-concept"><a href="#independent-blocks-as-a-concept" class="article__heading-anchor"></a>Independent blocks as a concept</h2><p>By the fall of 2007, our everyday practice got some theory behind it.</p>
+<p>The Independent Block concept, which was by that time the basis of our HTML layouts,
+was featured at the ClientSide&#39;2007 conference in Moscow, Russia.</p>
+<p>In that presentation, the first attempt to define a <code>block</code> has been made.</p>
+<h3 class="article__heading article__heading_3" id="blocks-the-declaration-of-idependence"><a href="#blocks-the-declaration-of-idependence" class="article__heading-anchor"></a>Blocks: the declaration of idependence</h3><p>In our attempt to produce a formal (in fact, semi-formal) declaration of <code>block</code>, the following 3 principles were highlighted:</p>
+<ol>
+<li>Only classnames (not IDs) should be used to describe styles;</li>
+<li>Each block classname has a prefix;</li>
+<li>Any CSS rules except ones prefixed with g- must belong to a block.</li>
+</ol>
+<p>As soon as unique IDs are dropped, the same block can be used on the same page more than once.
+This also allows two or more classes to co-exist on the same DOM node, which turned out to be quite useful later.</p>
+<h4 class="article__heading article__heading_4" id="blocks-simple-and-compound-the-misclassification"><a href="#blocks-simple-and-compound-the-misclassification" class="article__heading-anchor"></a>Blocks simple and compound: the misclassification</h4><p>We defined simple blocks as not being able to contain another blocks anywhere inside their markup.</p>
+<p>Compound blocks were allowed (or sometimes, required) to have nested blocks embedded.</p>
+<p>This classification was naive; even the simplest blocks sometimes were wrapped around other blocks
+and had to be &quot;upgraded&quot; and refactored to fit the new role.</p>
+<p>This misclassification in fact had struck back in so many cases that we had finally accepted the opposite
+principle: any block should allow for arbitrary content to be embedded, whenever possible.</p>
+<h4 class="article__heading article__heading_4" id="completely-independent-blocks"><a href="#completely-independent-blocks" class="article__heading-anchor"></a>Completely independent blocks</h4><p>CSS definitions aren&#39;t bulletproof when we mix a lot of styled content originating from different sources
+on a single web page.</p>
+<p>In complex layouts, blocks may alter each other appearance because of element names conflicts.
+Tagname-based CSS rules may match more tags than we intended them to.</p>
+<p>As soon as we had to fight these and similar bugs in production, a strict version of an independent block
+(named Absolutely Independept Block, abbreviated AIB) was defined with the following extra rules:</p>
+<ol>
+<li>never match CSS to tagnames, use classnames for everything:
+<code>.b-user b -&gt; .b-user .first-letter</code></li>
+<li>classnames for block elements must be prefixed with the parent block name:
+<code>.b-user .first-letter -&gt; .b-user-first_letter</code></li>
+</ol>
+<p>Such classnames tend to be much longer, and the resulting HTML code is considerably bigger in size.</p>
+<p>This was the main reason why AIB was considered a &quot;costly solution&quot; to be used more as a remedy, not as an everyday practice.</p>
+<h4 class="article__heading article__heading_4" id="prefixes"><a href="#prefixes" class="article__heading-anchor"></a>Prefixes</h4><p>As everybody is aware nowadays, giving names to variables is one of the most difficult problems in development, ever.</p>
+<p>We approached it cautiously, and invented four prefixes allowed for block names, each one with its own semantics:</p>
+<ul>
+<li><strong>b-</strong>
+common blocks</li>
+<li><strong>h-</strong>
+holsters, used for gluing several elements together</li>
+<li><strong>l-</strong>
+layout grids</li>
+<li><strong>g-</strong>
+global styles</li>
+</ul>
+<h4 class="article__heading article__heading_4" id="modifications"><a href="#modifications" class="article__heading-anchor"></a>Modifications</h4><p><code>Modification</code> can be defined as a specific state of a block, or as a flag that holds some specific property.</p>
+<p>This is best explained with an example: a block representing a button may have three default sizes: small, normal and big.</p>
+<p>Instead of creating 3 different blocks, you should assign a <code>modification</code> to your block. The modification requires
+a name (e.g. <code>size</code>) and a value (<code>small</code>, <code>normal</code> or <code>big</code>).</p>
+<p>There are two reasons for a block to get a modification:</p>
+<ol>
+<li>Block may alter its presentation according to its placement in the layout.
+Such modification is called <code>context-dependent</code>.</li>
+<li>An additional (postfixed) classname may change block appearance. This is a context-independent (postfix-based) modification.
+<code>class=&quot;b-block b-block-postfix&quot;</code></li>
+</ol>
+<h2 class="article__heading article__heading_2" id="unified-portal-wide-framework"><a href="#unified-portal-wide-framework" class="article__heading-anchor"></a>Unified portal-wide framework</h2><p>At the beginning of 2008, Yandex had been going through a major review of its internal design policies. We decided to create a brand book (for internal use) to enforce best practices in interface design, company-wide.</p>
+<p>This task was assigned to the front-end team, and after some pondering of options, we decided to proceed with technologies we were the most proficient with, namely: HTML and CSS code.</p>
+<p>Interfaces evolve fast, so fast that any long-term attempt to describe interfaces with words and pictures will become obsolete even before completion. We needed a brand book that would represent our interfaces as they were: changing rapidly and still unified between different Yandex services and products.</p>
+<p>Therefore, we decided that our interface brand book should be built with the same blocks we used to build our web sites. Blocks could be shared between projects and represent the latest in Yandex interface design.</p>
+<p>We decided to build a portal-wide framework of blocks so all could benefit from it and contribute back. The project was internally named <code>Lego</code>.</p>
+<h3 class="article__heading article__heading_3" id="lego-repository-structure-first-approach"><a href="#lego-repository-structure-first-approach" class="article__heading-anchor"></a>Lego repository structure, first approach</h3><p>The topmost level corresponded to various available <code>implementations</code>:</p>
+<pre><code class="lang-files">css/
+html/
+js/
+xml/
+xsl/
+</code></pre>
+<p>Each implementation contained its own sub-structure of folders.</p>
+<p>CSS went into 3 different folders:</p>
+<pre><code class="lang-files">css/
+  block/
+    b-dropdown/
+      b-dropdown.css
+  service/
+    auto/
+      block/
+        b-head-logo-auto.css
+      head.css
+  util/
+    b-hmenu/
+      b-hmenu.css
+</code></pre>
+<ol>
+<li>block — blocks shared between services</li>
+<li>util — general-purpose blocks ready to be opensourced</li>
+<li>service — CSS styles for specific Yandex services, used for branding, header/footer etc.</li>
+</ol>
+<p>HTML folder structure was identical to CSS:</p>
+<pre><code class="lang-files">html/
+  block/
+    b-dropdown.html
+  service/
+    auto/
+      l-head.html
+  util/
+    b-hmenu.html
+</code></pre>
+<p>JavaScript was yet loosely structured and used inconsistently between services:</p>
+<pre><code class="lang-files">js/
+  check-is-frame.js
+  check-session.js
+  clean-on-focus.js
+  dropdown.js
+  event.add.js
+  event.del.js
+</code></pre>
+<p>Each service had a corresponding XML file semantically describing its page header (and providing necessary project-specific data), which in conjunction with an XSL stylesheet generated header HTML code.</p>
+<pre><code class="lang-files">xml/
+  block/
+    b-head-tabs-communication.xml
+    common-services.ru.xml
+    head-messages.ru.xml
+  service/
+    auto/
+      head.xml
+</code></pre>
+<p>XSL templates for various blocks (one file per block) were contained in one folder:</p>
+<pre><code class="lang-files">xsl/
+  block/
+    b-dropdown.xsl
+    b-head-line.xsl
+    i-common.xsl
+    i-locale.xsl
+    l-foot.xsl
+    l-head.xsl
+</code></pre>
+<p>What about integration?</p>
+<p>Lego is linked to projects with the help of a version control feature known as <code>svn:externals</code>.</p>
+<p>When a package is built for production deployment, the external library (Lego) code is embedded into the package; this is similar to static library linking in compiled languages.</p>
+<p>Lego provides an SVN branch for each of its major releases; sticking to a branch in svn:externals allows for hotfixes to arrive to a project; for extreme stability, project can freeze at a specific Lego revision. In either case, major versions switches can be prepared and made whenever necessary.</p>
+<p>This simple technique proved quite flexible and is employed up to this day by many Yandex services.</p>
+<h4 class="article__heading article__heading_4" id="per-page-files"><a href="#per-page-files" class="article__heading-anchor"></a>Per-page files</h4><p>Files linked from web pages were mostly importing corresponding block implementations from the Lego folder structure.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> url(../../block/l-head/l-head.css);
+@<span class="hljs-keyword">import</span> url(../../block/b-head-logo/b-head-logo.css);
+@<span class="hljs-keyword">import</span> url(../../block/b-head-logo/b-head-logo_name.css);
+@<span class="hljs-keyword">import</span> url(block/b-head-logo-auto.css);
+</code></pre>
+<p>The consistency of import directives was maintained manually.</p>
+<p>At that point, we didn&#39;t yet come to a unified file naming convention and tried several approaches.</p>
+<h2 class="article__heading article__heading_2" id="portal-wide-framework-lego-12-2008"><a href="#portal-wide-framework-lego-12-2008" class="article__heading-anchor"></a>Portal-wide framework lego 1.2 (2008)</h2><p>Upon releasing Lego version 1.2, the code had been refactored and folder structure had changed.</p>
+<pre><code class="lang-files">common/
+  css/
+  js/
+  xml/
+  xsl/
+example/
+  html/
+service/
+  auto/
+    css/
+    xml/
+</code></pre>
+<p>Blocks previously separated and placed in <code>util</code> and <code>block</code> folders are now combined. Common styles shared by most blocks are stored in common/css.</p>
+<p>We had been pondering the possibility of open-sourcing the code but postponed it until two years later.</p>
+<pre><code class="lang-files">common/
+  css/
+    b-dropdown/
+      arr/
+        b-dropdown.arr.css
+        b-dropdown.arr.ie.css
+        b-dropdown.css
+        b-dropdown.ie.css
+</code></pre>
+<p>MSIE-specific styles were renamed from <em>-ie.css to </em>.ie.css.</p>
+<p>All contents of optional CSS files (such as <code>b-dropdown_arr.css</code>) was moved into separate folders (<code>arr/b-dropdown.arr.css</code>).</p>
+<p>For classname-based modification of a block, the underscore was assigned as a separator, replacing a single dash that was used previously.</p>
+<p>This made a block name visually separated from a modificator name, and proved quite useful while developing automated tools, as it allowed for unambiguous search and pattern matching.</p>
+<h2 class="article__heading article__heading_2" id="bem-est-2009"><a href="#bem-est-2009" class="article__heading-anchor"></a>BEM, est. 2009</h2><p>In March of 2009, Lego 2.0 had been released.</p>
+<p>That event marked the end of the &quot;independent blocks&quot; epoch and formation of the BEM methodology.</p>
+<p>BEM stands for Block, Element, Modifier; these are three key entities we use to develop web components.</p>
+<h3 class="article__heading article__heading_3" id="lego-20-in-2009"><a href="#lego-20-in-2009" class="article__heading-anchor"></a>Lego 2.0 in 2009</h3><p>What was the key update the 2.0 version had delivered?</p>
+<p>What really changed our understanding of the methodology was the primacy of <code>block</code> regardless of the underlying implementation technologies.</p>
+<p>Each block is contained in a separate folder; each technology (CSS, JS, XSL etc.) is represented by a separate file. Documentation just gets its own file type such as <code>.wiki</code>.</p>
+<p>What additional terms did we operate on at that time?</p>
+<h4 class="article__heading article__heading_4" id="terminology-excerpts"><a href="#terminology-excerpts" class="article__heading-anchor"></a>Terminology excerpts</h4><p><code>Independent Block</code> may be used on any web page and placed anywhere in the layout.</p>
+<p>In XML we apply XSL stylesheets to, the block is represented by a node in <code>lego</code> namespace:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:l-head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+</code></pre>
+<p>In HTML, block container gets a classname exactly corresponding to its name:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-head"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo"</span>&gt;</span>
+</code></pre>
+<p>CSS:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.l-head</span>
+<span class="hljs-selector-class">.b-head-logo</span>
+</code></pre>
+<p>All block files (CSS, JS, HTML, XSL) are stored in block folder:</p>
+<pre><code class="lang-files">common/
+  block/
+    b-head-logo/
+      b-head-logo.css
+      b-head-logo.xsl
+      b-head-logo.js
+      b-head-logo.wiki
+</code></pre>
+<p>In XML files that describe page structure, blocks are described with nodes in <code>lego</code> namespace; block name prefix is omitted:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">lego:name</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+</code></pre>
+<p>HTML classes inside the block have their prefixes omitted as well.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span>Авто<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+.b-head-logo .name { ... }
+</code></pre>
+<p>Files related to inner elements each get their own folder:</p>
+<pre><code class="lang-files">common/
+  block/
+    b-head-logo/
+      name/
+        b-head-logo.name.css
+        b-head-logo.name.png
+        b-head-logo.name.wiki
+</code></pre>
+<p>Modifiers in XML are specified as node attributes in <code>lego</code> namespace:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-tabs</span> <span class="hljs-attr">lego:theme</span>=<span class="hljs-string">"grey"</span>&gt;</span>
+</code></pre>
+<p>In HTML, an extra classname is added:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-tabs b-head-tabs_grey"</span>&gt;</span>
+
+.b-head-tabs_grey { ... }
+</code></pre>
+<p>Modifier files (styles etc.) go into separate folders prefixed with an underscore:</p>
+<pre><code class="lang-files">common/
+  block/
+    b-head-logo/
+      _theme/
+        b-head-logo_gray.css
+        b-head-logo_gray.png
+        b-head-logo_gray.wiki
+</code></pre>
+<h4 class="article__heading article__heading_4" id="declaration-in-xml"><a href="#declaration-in-xml" class="article__heading-anchor"></a>Declaration in XML</h4><p>All Lego components used in a project are described in an XML file:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">lego:page</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">lego:l-head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">lego:name</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">lego:b-head-logo</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">lego:b-head-tabs</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search-and-content"</span>/&gt;</span>
+</code></pre>
+<p>This XML allows for CSS imports to be generated:</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> url(../../common/block/global/_type/global_reset.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/l-head/l-head.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-logo/b-head-logo.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-logo/name/b-head-logo.name.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-tabs/b-head-tabs.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-dropdown/b-dropdown.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-dropdown/text/b-dropdown.text.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-pseudo-link/b-pseudo-link.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-dropdown/arrow/b-dropdown.arrow.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-search/b-head-search.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-search/arrow/b-head-search.arrow.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/b-search.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/input/b-search.input.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/sample/b-search.sample.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/precise/b-search.precise.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-search/button/b-search.button.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-userinfo/b-head-userinfo.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-userinfo/user/b-head-userinfo.user.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-user/b-user.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-userinfo/service/b-head-userinfo.service.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-userinfo/setup/b-head-userinfo.setup.css);
+@<span class="hljs-keyword">import</span> url(../../common/block/b-head-userinfo/region/b-head-userinfo.region.css);
+@<span class="hljs-keyword">import</span> url(block/b-head-logo/b-head-logo.css);
+@<span class="hljs-keyword">import</span> url(block/b-head-search/b-head-search.css);
+</code></pre>
+<p>This example shows that common styles are imported first; then, project styles add extra definitions or redefine some of the common blocks. This makes project-specific changes possible while maintaining a common shared codebase.</p>
+<p>Same XML declarations allow for JS includes to be autogenerated.</p>
+<pre><code class="lang-js">include(<span class="hljs-string">"../../common/block/i-locale/i-locale.js"</span>);
+include(<span class="hljs-string">"../../common/block/b-dropdown/b-dropdown.js"</span>);
+include(<span class="hljs-string">"../../common/block/b-search/sample/b-search.sample.js"</span>);
+include(<span class="hljs-string">"../../common/block/b-head-userinfo/user/b-head-userinfo.user.js"</span>);
+</code></pre>
+<p>XSL templates imports are autogenerated as well, using the same XML-based definitions:</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:stylesheet</span> <span class="hljs-attr">xmlns:xsl</span>=<span class="hljs-string">"http://www.w3.org/1999/XSL/Transform"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.0"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/i-common/i-common.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/i-items/i-items.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/l-head/l-head.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-logo/b-head-logo.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-logo/name/b-head-logo.name.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-tabs/b-head-tabs.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-dropdown/b-dropdown.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-pseudo-link/b-pseudo-link.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-search/b-head-search.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/b-search.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/input/b-search.input.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/sample/b-search.sample.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/precise/b-search.precise.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-search/button/b-search.button.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/b-head-userinfo.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-user/b-user.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/service/b-head-userinfo.service.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/setup/b-head-userinfo.setup.xsl"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">xsl:import</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../common/block/b-head-userinfo/region/b-head-userinfo.region.xsl"</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">xsl:stylesheet</span>&gt;</span>
+</code></pre>
+<p>Code generation was an important step forward; from this point onwards, we don&#39;t have to maintain dependencies manually.</p>
+<h3 class="article__heading article__heading_3" id="css-selector-speed-revisited-2009"><a href="#css-selector-speed-revisited-2009" class="article__heading-anchor"></a>CSS selector speed revisited, 2009</h3><p>During major redesign of Yandex.Mail service in 2009, interface responsiveness and overall speed were the key factors. It was our goal to release a web application that feels as fast as a piece of desktop software, and maybe even faster.</p>
+<p>Client-side (in-browser) XSL transformations were employed as a main templating solution (XML with all the data was loaded separately). XSL transforms are applied really fast, but the resulting HTML code takes significant time to be appended to the page DOM. However, disabling all CSS made this problem go away magically.</p>
+<p>While studying various factors that could have affected the rendering speed, CSS selectors were identified as a major source of the slowdown. The bigger the DOM tree and the CSS stylesheet, the longer it takes for all CSS rules to be applied.</p>
+<p>There’s a summary of our study available (in Russian):
+<a href="http://clubs.ya.ru/bem/replies.xml?item_no=338">completely independent blocks</a>.</p>
+<p>It turned out there is a way to make CSS many times faster: switching to simple selectors and eliminating CSS cascade wherever possible. Selectors based on a single classname are quick and browser handles them with ease. We already had a solution that could use such selectors: the so-called
+<a href="http://clubs.ya.ru/bem/replies.xml?item_no=338">completely independent blocks</a>.</p>
+<p>All Lego blocks were refactored to follow the completely independent blocks restrictions. As soon as all classnames become unique, most rules require a single class query and work way faster.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"b-head-logo__name"</span>&gt;</span>
+        Auto
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 class="article__heading article__heading_3" id="establishing-naming-conventions"><a href="#establishing-naming-conventions" class="article__heading-anchor"></a>Establishing naming conventions</h3><p>After taking several attempts to modify naming conventions, we agreed on some naming principles that hadn&#39;t changed since then.</p>
+<p>In file names, the dot separator was replaced by double underscore <code>__</code>. Before: <code>b-block.elem.css</code>,
+after: <code>b-block__elem.css</code>; thus, file names were made consistent with CSS selectors.</p>
+<p>Block elements were allowed to have their own modifiers, too.</p>
+<p><code>.b-block__elem_theme_green</code>, similar to <code>.b-block_theme_green</code>.</p>
+<p>Modifiers were changed to be a key/value pair:
+Before: <code>.b-menu__item_current</code>
+After: <code>.b-menu__item_state_current</code>.</p>
+<p>This change turned out to be useful when working with modifiers from JavaScript.</p>
+<h2 class="article__heading article__heading_2" id="going-open-source-2010"><a href="#going-open-source-2010" class="article__heading-anchor"></a>Going open source (2010)</h2><p>In 2010, we had published some code on <a href="https://github.com/bem">our GitHub account</a> to continue growing as an open source project.</p>
+<h4 class="article__heading article__heading_4" id="creating-bem-bl-library"><a href="#creating-bem-bl-library" class="article__heading-anchor"></a>Creating bem-bl library</h4><p>Blocks from Lego are being gradually ported to <a href="https://en.bem.info/libs/bem-bl/">bem-bl</a>, a library of blocks we consider useful for any web site, not just a Yandex project. As blocks are gradually open-sourced, we improve code and add new features.</p>
+<p>This is very much a work in progress, and we invite everybody to make pull requests :-)</p>
+<p>We also develop <a href="https://en.bem.info/tools/bem/bem-tools/">bem-tools</a>, a set of helper scripts and automation utilities that make working with BEM files easier. This is mostly done with Node.js, to keep the barriers low for front-end people familiar with JavaScript and willing to contribute.</p>
+<h3 class="article__heading article__heading_3" id="redefinition-levels-in-bem"><a href="#redefinition-levels-in-bem" class="article__heading-anchor"></a>Redefinition levels in BEM</h3><p>One size never fits all... but one BEM does! Because blocks and elements are represented on a file system as files and folders, and BEM file structure is unified and based mostly on semantic criteria, we can easily redefine a part of a BEM block, or add more functionality. Similar to the way we extend objects in JavaScript, BEM blocks can be extended using so-called &quot;redefinition levels&quot;.</p>
+<p>Typical redefinition levels may be defined like this:</p>
+<ol>
+<li>public bem-bl library pulled from github, extended by...</li>
+<li>internal block library (such as Lego), extended by..</li>
+<li>project-specific block library</li>
+</ol>
+<p>You&#39;re free to go and add more levels. You might need some page-specific block improvements... oh, I believe you got the idea.</p>
+<p>Example:</p>
+<pre><code class="lang-files">bem-bl/
+  b-logo/
+lego/
+  b-logo/
+auto/
+  blocks/
+    b-logo/
+</code></pre>
+<p>It is also possible to use a custom file structure on a redefinition level; as long as you follow the BEM concept, all you need is to configure our build tools according to your new cool structure.</p>
+<p>We won&#39;t go into much detail here, but there&#39;s a configuration file for that:</p>
+<pre><code class="lang-files">.bem/
+  level.js
+</code></pre>
+<p>You can specify different file naming patterns, or even flatten your folder structure completely.</p>
+<h3 class="article__heading article__heading_3" id="bemhtml-templating-engine"><a href="#bemhtml-templating-engine" class="article__heading-anchor"></a>BEMHTML templating engine</h3><p>We tried different templating solutions, and ended up developing our own, called BEMHTML.</p>
+<p>This templating engine:</p>
+<ol>
+<li>operates on core BEM (Block, Element, Modifier) terms</li>
+<li>supports redefinition levels: build common blocks and tailor them to your needs</li>
+<li>precompiles templates into JavaScript code that runs either in a browser, or on a server</li>
+</ol>
+<p>More details on BEMHTML will be available soon.</p>
+<h2 class="article__heading article__heading_2" id="bem-try-this-at-home"><a href="#bem-try-this-at-home" class="article__heading-anchor"></a>BEM: try this at home!</h2><p>As you can see, BEM has a long history of trial and error. It took Yandex a while to figure out what&#39;s important and what’s not.</p>
+<p>The foundation of the BEM methodology are Block, Element and Modifier; these entities are consistently used in all our projects.</p>
+<p>BEM as we know and use it today is not the final truth, nor the revelation, but something constantly being driven by practice, and tested on real-life projects. You can follow this methodology to the extent that you find useful.</p>
+<p>BEM is quite flexible, as it is mostly a methodology; there is no such thing as BEM API, or BEM SDK. While we encourage you to try and use the open source tools we provide, which are indeed a BEM framework, you might find BEM principles good enough to be embedded into your products or technologies in some other way.</p>
+<p>BEM is a development methodology that allows team members to collaborate and communicate ideas using the unified language consisting of simple yet powerful terms: blocks, elements, modifiers.</p>
+<p>There is no such thing as &quot;true BEM&quot;, and we don&#39;t try to create one. The implementation we offer is consistent and we like it a lot, but you may create your own and still call it BEM, as long as you stay true to the core principles.</p>
+<p>BEM is a collection of ideas and methods, a <em>methodology</em>.
+Each company and each team may integrate it into an existing workflow gradually, finding out what works best for them.</p>
+<p>I assume you&#39;ve got a web project and want to give BEM a try by using it here and there in your HTML and CSS.</p>
+<p>That&#39;s great! It&#39;s how we started using BEM, too :-)</p>
+<p>Choose an approach you find the easiest to understand and maintain, for example let your block elements have simple (non-prefixed) classes, and use modifiers with a key/value pair:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.b-block</span>
+<span class="hljs-selector-class">.b-block</span> <span class="hljs-selector-class">.elem</span>
+<span class="hljs-selector-class">.b-block_size_l</span>
+<span class="hljs-selector-class">.b-block</span> <span class="hljs-selector-class">.elem_size_l</span>
+</code></pre>
+<p>You can go one step further and assign a specific class to all DOM nodes inside your block that have a semantic meaning (we call that &quot;completely independent blocks&quot;, see above):</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.b-block</span>
+<span class="hljs-selector-class">.b-block__elem</span>
+<span class="hljs-selector-class">.b-block_size_l</span>
+<span class="hljs-selector-class">.b-block__elem_size_l</span>
+</code></pre>
+<p>Find CSS prefixes too long to type? Remove them!</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.block</span>
+<span class="hljs-selector-class">.block__elem</span>
+<span class="hljs-selector-class">.block_size_l</span>
+<span class="hljs-selector-class">.block__elem_size_l</span>
+</code></pre>
+<p>This is a perfect opportunity to try BEM concepts, and since we don&#39;t really have those strict rules, you&#39;re not really breaking anything as long as you hold on to the main principle of blocks, elements and modifiers.</p>
+<p>Read more about <a href="/method/filesystem/">putting blocks to filesystem</a>.</p>
+</div><ul class="article-rewind"><li class="article-rewind__prev"><a class="article-rewind__prev-link" href="/bem.info/en/methodology/solved-problems/">Solved problems</a></li> <li class="article-rewind__next"><a class="article-rewind__next-link" href="/bem.info/en/methodology/articles/">Articles</a></li></ul><div class="article-amendments">If you notice a mistake or want something to supplement the article, you can always write to us at <a class="article-amendments__issue" href="https://github.com/bem/bem-method/issues/new">GitHub</a>, or correct an article using <a class="article-amendments__edit" href="http://prose.io/#bem/bem-method/blob/bem-info-data/method/history/history.en.md">prose.io.</a></div><div class="social-likes"><a class="social-likes__text">Share with world: </a><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fen.bem.info%2Fmethodology%2Fhistory%2F&amp;title=History&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fen.bem.info%2Fmethodology%2Fhistory%2F&amp;title=History&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fen.bem.info%2Fmethodology%2Fhistory%2F&amp;title=History&amp;image=">Twitter</a></div></div><footer class="footer page-bg"><div class="legos legos_inverted"><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div></div><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_en">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_en/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"/></div></noscript><script src="/bem.info/en/methodology.en.min.js"></script></body></html>

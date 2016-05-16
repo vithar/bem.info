@@ -1,0 +1,149 @@
+<!DOCTYPE html><html class="ua_js_no"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Filesystem / Methodology / BEM</title><script>(function(e,c){e[c]=e[c].replace(/(ua_js_)no/g,"$1yes");})(document.documentElement,"className");</script><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic"/><link rel="stylesheet" href="/bem.info/en/methodology.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/><meta property="og:image" content="https://ru.bem.info/og_image/logo_theme_stripe.png"/><meta property="og:url" content="/methodology/filesystem/"/><meta property="og:type" content="article"/><meta property="og:description" content="Filesystem"/><meta property="og:keywords" content="methodology"/><link rel="shortcut icon" href="/bem.info/en/favicon.ico"/></head><body class="page"><div class="header i-bem" data-bem='{"header":{}}'><div class="header__layout"><a class="logo header__logo" href="/bem.info/en/"><svg class="logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 84"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"/></svg></a><ul class="lang-switcher header__lang"><li class="lang-switcher__item"><span class="lang-switcher__current">en</span></li><li class="lang-switcher__item"><a class="lang-switcher__link" href="/bem.info/ru/methodology/filesystem/">ru</a></li></ul><a class="header__forum" href="/bem.info/en/forum/">Forum</a></div><div class="search header__search i-bem" data-bem='{"search":{}}'><form class="form search__form search__form_site_methodology i-bem" data-bem='{"form":{}}' action="https://yandex.com/sitesearch"><span class="input input_type_search i-bem" data-bem='{"input":{}}'><span class="input__box"><input class="input__control" name="text" placeholder="Search" autocomplete="off" type="search"/></span></span><input type="hidden" name="reqenc"/><input type="hidden" name="searchid" value="1944806"/><input type="hidden" name="l10n" value="en"/><div class="search-icon search__submit"><svg viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6"/><path d="M11 11l5 5"/></svg></div></form></div><div class="header__menu"><ul class="breadcrumbs header__breadcrumbs"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/bem.info/en/methodology/">Methodology</a></li></ul><ul class="nav"><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/key-concepts/">Key concepts</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/naming-convention/">Naming convention</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/js/">JavaScript</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/js-principles/">JavaScript principles</a></li><li class="nav__item nav__item_current">Filesystem</li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/build/">Build</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/declarations/">Declarations</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/solved-problems/">Solved problems</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/history/">History</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/articles/">Articles</a></li><li class="nav__item"><a class="nav__link" href="/bem.info/en/methodology/faq/">FAQ</a></li></ul></div><div class="header__toggle search-icon"><span class="header__toggle-line"></span></div></div><div class="sitemap i-bem" data-bem='{"sitemap":{}}'><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_methodology"><a class="sitemap__link" href="/bem.info/en/methodology/">Methodology</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/key-concepts/">Key concepts</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/naming-convention/">Naming convention</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/js/">JavaScript</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/js-principles/">JavaScript principles</a></li><li class="sitemap__tree-item-1"><strong class="sitemap__current">Filesystem</strong></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/build/">Build</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/declarations/">Declarations</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/solved-problems/">Solved problems</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/history/">History</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/articles/">Articles</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/methodology/faq/">FAQ</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_toolbox"><a class="sitemap__link" href="/bem.info/en/toolbox/">Toolbox</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/toolbox/enb/">ENB</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/enb/test/">ENB TEST</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/toolbox/bem-tools/">bem-toolbox</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/">BEM SDK</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/bem-naming/">bem-naming</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/bem-config/">bem-config</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/toolbox/sdk/bem-fs-scheme/">bem-fs-scheme</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_platform"><a class="sitemap__link">Platform</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link">Technologies</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/i-bem/v2/i-bem-js/">i-bem</a></li><li class="sitemap__tree-item-2"><a class="sitemap__link" href="/bem.info/en/technology/deps/about/">DEPS</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/bemjson/v2/bemjson/">BEMJSON</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/bemhtml/v2/intro/">BEMHTML</a></li><li class="sitemap__tree-item-3"><a class="sitemap__link" href="/bem.info/en/technology/bemtree/v2/bemtree/">BEMTREE</a></li><div class="sitemap__tree-item-0"><a class="sitemap__link" href="/bem.info/en/libs/">Libraries</a></div><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/libs/bem-core/">bem-core</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/libs/bem-components/">bem-components</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/libs/bem-history/">bem-history</a></li></ul></div><div class="sitemap__section"><h1 class="sitemap__title sitemap__title_site_community"><a class="sitemap__link" href="/bem.info/en/community/">Community</a></h1><ul class="sitemap__tree"><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/blog/">Blog</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/events/">Events</a></li><li class="sitemap__tree-item-1"><a class="sitemap__link" href="/bem.info/en/forum/">Forum</a></li></ul></div></div><div class="article-wrap"><div class="article"><ul class="article-tags"><li class="article-tags__tag"><a class="article-tags__link" href="/bem.info/en/tags/methodology">methodology</a></li></ul><h1 class="article__heading article__heading_1" id="file-system-organization"><a href="#file-system-organization" class="article__heading-anchor"></a>File system organization</h1><p>A component-based approach used in the BEM methodology also determines the way that BEM projects are organized in a file system. In BEM, it&#39;s not just the interface that is divided into independent components, i.e. blocks, but the implementation of blocks is also divided into independent parts, namely files.</p>
+<p>Below on this page you will find:</p>
+<ul>
+<li><a href="#principles-of-file-system-organization-for-bem-projects">Principles of file system organization</a></li>
+<li><a href="#file-system-organization-of-a-bem-project">Example of a file system for a BEM project</a></li>
+<li><a href="#examples-of-using-redefinition-levels">Examples of using redefinition levels</a></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="principles-of-file-system-organization-for-bem-projects"><a href="#principles-of-file-system-organization-for-bem-projects" class="article__heading-anchor"></a>Principles of file system organization for BEM projects</h2><p>In a BEM project, the code is broken down into small independent parts, to make working with individual blocks easier. Before they are sent to the browser, the files are assembled and optimized. That way we separate the human-manipulated code from the code that is sent to the browser.</p>
+<p>In the file system, the codebase of BEM project is organized according to the following principles:</p>
+<ul>
+<li><a href="#a-block-implementation-is-divided-into-separate-files">A block implementation is divided into separate parts</a></li>
+<li><a href="#optional-elements-and-modifiers-are-stored-in-separate-files">Optional elements and modifiers are stored in separate files</a></li>
+<li><a href="#files-are-grouped-by-meaning-and-not-by-type">Files are grouped by meaning and not by type</a></li>
+<li><a href="#a-project-is-divided-into-redefinition-levels">A project is divided into redefinition levels</a></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="a-block-implementation-is-divided-into-separate-files"><a href="#a-block-implementation-is-divided-into-separate-files" class="article__heading-anchor"></a>A block implementation is divided into separate files</h3><p>A file set for a block (e.g., <code>input.css</code>, <code>input.js</code>) is determined by the <a href="/methodology/key-concepts#implementation-technology">technologies</a> that make up the implementation of the block.</p>
+<p><em>Why?</em></p>
+<ul>
+<li><strong>Enhanced project navigation.</strong>
+The project structure is built on a single principle, and the block names are unique. This enables developers to easily identify different parts of the project and to find necessary files quicker.</li>
+<li><strong>Easier moving of blocks between projects.</strong>
+The implementation of blocks is divided into separate files. To move a block from one project to another, you only need to copy the relevant files or directories.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="optional-elements-and-modifiers-are-stored-in-separate-files"><a href="#optional-elements-and-modifiers-are-stored-in-separate-files" class="article__heading-anchor"></a>Optional elements and modifiers are stored in separate files</h3><p><em>Why?</em></p>
+<ul>
+<li><strong>Only relevant block implementation is included</strong>
+Only files that are essential to a given block implementation are included in the build.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="files-are-grouped-by-meaning-and-not-by-type"><a href="#files-are-grouped-by-meaning-and-not-by-type" class="article__heading-anchor"></a>Files are grouped by meaning and not by type</h3><p>Block files are grouped together based on common <a href="/methodology/naming-convention/">naming rules</a>. For convenience, they can be grouped into a block directory.</p>
+<p><em>Why?</em></p>
+<ul>
+<li><strong>Only necessary blocks are included in the project</strong>
+Blocks are implemented as independent entities. This enables us to configure a build in a way that ensures that only relevant blocks are included in the project.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="a-project-is-divided-into-redefinition-levels"><a href="#a-project-is-divided-into-redefinition-levels" class="article__heading-anchor"></a>A project is divided into redefinition levels</h3><p>The final implementation of a block can be split into <a href="#examples-of-using-redefinition-levels">redefinition levels</a>.</p>
+<p><em>Why?</em></p>
+<ul>
+<li><strong>No code duplication.</strong>
+Storing implementation common to all platforms on a separate level helps avoid code duplication and reduce debugging time.</li>
+<li><strong>Redefinition and extension of ready-made library blocks.</strong>
+To modify a library block, you don&#39;t need to copy it to the project level. You just need to create the necessary file with the changes or new code at another redefinition level and include it in the build.</li>
+<li><strong>Updating libraries linked to the project.</strong>
+Dividing a project into distinct levels lets us modify blocks without affecting the library source code. If the library gets updated, the block modification is stored at a different level of the project.</li>
+</ul>
+<h2 class="article__heading article__heading_2" id="file-system-organization-of-a-bem-project"><a href="#file-system-organization-of-a-bem-project" class="article__heading-anchor"></a>File system organization of a BEM project</h2><p>For every block, there&#39;s a directory in the file system. The directory is named after the block.</p>
+<pre><code class="lang-files">blocks/
+    input/     # input block directory
+    button/    # button block directory
+</code></pre>
+<p>A block implementation is divided into separate files known as technology files. The files all have the same name as the block. The extension of each file corresponds to its technology.</p>
+<pre><code class="lang-files">blocks/
+    input/
+        input.css       # input block implementation in CSS
+        input.js        # input block implementation in JavaScript
+    button/
+        button.css
+        button.js
+        button.png
+</code></pre>
+<p>Names of files and directories for <a href="/methodology/key-concepts#bem-entity">BEM entities</a> are based on the <a href="/methodology/naming-convention/">naming convention</a>:</p>
+<ul>
+<li>Element — <code>block__elem.extension</code> (<code>input__box.css</code>).</li>
+<li>Block modifier — <code>block_mod_val.extension</code> (<code>input_type_search.css</code>) or <code>block_mod.extension</code> (<code>input_disabled.css</code>). Values of boolean modifiers are not included.</li>
+<li>Element modifier — <code>block__elem_mod_val.extension</code> (<code>input__clear_size_large.css</code>) or <code>block__elem_mod.extension</code> (<code>input__clear_visible.css</code>).</li>
+</ul>
+<p>Modifiers and elements are stored in separate files and are grouped into accordingly named block subdirectories.</p>
+<pre><code class="lang-files">blocks/
+    input/
+        _type/                        # type modifier directory
+            input_type_search.css     # Implementation of modifier type
+                                      # with value search in CSS technology
+        __box/                        # box element directory
+            input__box.css
+        input.css
+        input.js
+    button/
+        button.css
+        button.js
+        button.png
+</code></pre>
+<p>If there are modifiers that differ in value (e.g., <code>popup_target_anchor.extension</code> and <code>popup_target_position.extension</code>), the shared code can be stored in a separate file (<code>popup_target.extension</code>) with no modifier value included in the name.</p>
+<pre><code class="lang-files">blocks/
+    popup/
+        _target/
+            popup_target.css            # Common code of  modifier target
+            popup_target_anchor.css     # Modifier target with value anchor
+            popup_target_position.css   # Modifier target with value position
+        _visible/
+            popup_visible.css           # Boolean modifier visible
+    popup.css
+    popup.js
+</code></pre>
+<h3 class="article__heading article__heading_3" id="real-life-examples"><a href="#real-life-examples" class="article__heading-anchor"></a>Real-life examples</h3><ul>
+<li><a href="https://github.com/bem/bem-core/tree/v2/common.blocks/page">bem-core</a></li>
+<li><a href="https://github.com/bem/bem-components/tree/v2/common.blocks/button">bem-components</a></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="examples-of-using-redefinition-levels"><a href="#examples-of-using-redefinition-levels" class="article__heading-anchor"></a>Examples of using redefinition levels</h2><p>The implementation of a block can be divided into <a href="/methodology/key-concepts#redefinition-level">redefinition levels</a>.</p>
+<p>Let&#39;s take a few examples:</p>
+<ul>
+<li><a href="#linking-a-library">Linking a library</a></li>
+<li><a href="#dividing-a-project-into-platforms">Dividing a project into platforms</a></li>
+</ul>
+<h3 class="article__heading article__heading_3" id="linking-a-library"><a href="#linking-a-library" class="article__heading-anchor"></a>Linking a library</h3><p>A library can be linked to a project as a separate level. Blocks can be modified (extended or redefined) at another project level. During the build process the original block implementation will be linked from the library level and the redefined one from the project level.</p>
+<p>Such an arrangement allows us to preserve changes made to the blocks if the library gets updated — the library source code will be updated while the specific implementation of the project blocks will remain the same because it is stored at a different level.</p>
+<pre><code class="lang-files">library.blocks/
+    button/
+        button.css    # CSS implementation in the linked library (height 20px)
+project.blocks/
+    button/
+        button.css    # Redefinition of CSS implementation (height 24px)
+</code></pre>
+<h3 class="article__heading article__heading_3" id="dividing-a-project-into-platforms"><a href="#dividing-a-project-into-platforms" class="article__heading-anchor"></a>Dividing a project into platforms</h3><p>A project is divided into platforms (<code>mobile</code> and <code>desktop</code>) and into respective redefinition levels in the file system. The <code>common</code> level contains the implementation of blocks that is common to both platforms. The <code>desktop</code> and <code>mobile</code> levels contain platform-specific block implementations.</p>
+<p>Let&#39;s look at an example:</p>
+<pre><code class="lang-files">common.blocks/
+    button/
+        button.css    # Generic CSS implementation of the button
+desktop.blocks/
+    button/
+        button.css    # Desktop platform-specific button features
+mobile.blocks/
+    button/
+        button.css    # Mobile platform-specific button features
+</code></pre>
+<p>During the build process, all the generic CSS rules for the button will be included in the <code>desktop.css</code> file from the <code>common</code> level, and the redefined rules from the <code>desktop</code> level.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span>(<span class="hljs-keyword">common</span>.<span class="hljs-keyword">blocks</span>/<span class="hljs-keyword">button</span>/<span class="hljs-keyword">button</span>.<span class="hljs-keyword">css</span>);    <span class="hljs-comment">/* Generic CSS rules */</span>
+@<span class="hljs-keyword">import</span>(<span class="hljs-keyword">desktop</span>.<span class="hljs-keyword">blocks</span>/<span class="hljs-keyword">button</span>/<span class="hljs-keyword">button</span>.<span class="hljs-keyword">css</span>);   <span class="hljs-comment">/* Desktop platform-specific */</span>
+</code></pre>
+<p>The <code>mobile.css</code> file will include the generic CSS rules for the button from the <code>common</code> level and the redefined rules from the <code>mobile</code> level.</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span>(<span class="hljs-keyword">common</span>.<span class="hljs-keyword">blocks</span>/<span class="hljs-keyword">button</span>/<span class="hljs-keyword">button</span>.<span class="hljs-keyword">css</span>);    <span class="hljs-comment">/* Generic CSS rules */</span>
+@<span class="hljs-keyword">import</span>(<span class="hljs-keyword">mobile</span>.<span class="hljs-keyword">blocks</span>/<span class="hljs-keyword">button</span>/<span class="hljs-keyword">button</span>.<span class="hljs-keyword">css</span>);    <span class="hljs-comment">/* Mobile platform-specific */</span>
+</code></pre>
+</div><ul class="article-rewind"><li class="article-rewind__prev"><a class="article-rewind__prev-link" href="/bem.info/en/methodology/js-principles/">JavaScript principles</a></li> <li class="article-rewind__next"><a class="article-rewind__next-link" href="/bem.info/en/methodology/build/">Build</a></li></ul><div class="article-amendments">If you notice a mistake or want something to supplement the article, you can always write to us at <a class="article-amendments__issue" href="https://github.com/bem/bem-method/issues/new">GitHub</a>, or correct an article using <a class="article-amendments__edit" href="http://prose.io/#bem/bem-method/blob/bem-info-data/method/filesystem/filesystem.en.md">prose.io.</a></div><div class="social-likes"><a class="social-likes__text">Share with world: </a><a class="social-likes__service social-likes__service_type_facebook" href="https://www.facebook.com/sharer.php?s=100&amp;url=https%3A%2F%2Fen.bem.info%2Fmethodology%2Ffilesystem%2F&amp;title=Filesystem&amp;image=">Facebook</a> <a class="social-likes__service social-likes__service_type_vk" href="http://vk.com/share.php?&amp;url=https%3A%2F%2Fen.bem.info%2Fmethodology%2Ffilesystem%2F&amp;title=Filesystem&amp;image=">VKontakte</a> <a class="social-likes__service social-likes__service_type_twitter" href="https://twitter.com/share?&amp;url=https%3A%2F%2Fen.bem.info%2Fmethodology%2Ffilesystem%2F&amp;title=Filesystem&amp;image=">Twitter</a></div></div><footer class="footer page-bg"><div class="legos legos_inverted"><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_2"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_width_2"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_2"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego"></div><div class="legos__lego legos__lego_height_3"></div><div class="legos__lego legos__lego_width_2 legos__lego_height_3"></div><div class="legos__lego legos__lego_width_3 legos__lego_height_3"></div><div class="legos__lego legos__lego_height_2"></div><div class="legos__lego legos__lego_width_3"></div><div class="legos__lego legos__lego_width_2"></div></div><div class="footer__layout"><ul class="footer__community"><li class="footer__channel"><a class="footer__channel-link" href="https://telegram.me/bem_en">Telegram</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://www.facebook.com/groups/bem.info/">Facebook</a></li><li class="footer__channel"><a class="footer__channel-link" href="https://twitter.com/bem_en/">Twitter</a></li></ul></div></footer><script>(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16972024 = new Ya.Metrika({"id":"16972024","webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16972024" style="position:absolute; left:-9999px;"/></div></noscript><script src="/bem.info/en/methodology.en.min.js"></script></body></html>
